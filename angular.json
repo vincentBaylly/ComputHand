@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/diagram.js",
+              "src/assets/js/Treant.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,7 +88,10 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/diagram.js",
+              "src/assets/js/Treant.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
