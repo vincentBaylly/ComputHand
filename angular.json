@@ -31,7 +31,10 @@
             ],
             "scripts": [
               "src/assets/js/diagram.js",
-              "src/assets/js/Treant.js"
+              "src/assets/js/Treant.js",
+              "src/assets/js/raphael.js",
+              "src/assets/js/devDiagram.js",
+              "src/assets/js/sysDiagram.js"
             ]
           },
           "configurations": {
@@ -90,7 +93,10 @@
             ],
             "scripts": [
               "src/assets/js/diagram.js",
-              "src/assets/js/Treant.js"
+              "src/assets/js/Treant.js",
+              "src/assets/js/raphael.js",
+              "src/assets/js/devDiagram.js",
+              "src/assets/js/sysDiagram.js"
             ],
             "assets": [
               "src/favicon.ico",

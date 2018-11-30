@@ -3,8 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import '../../../assets/js/raphael.js';
 import '../../../assets/js/Treant.js';
 import '../../../assets/js/diagram.js';
+import '../../../assets/js/devDiagram.js';
+import '../../../assets/js/sysDiagram.js';
 
 declare var Treant: any;
+declare var archi_config: any;
+declare var devops_config: any;
+declare var database_config: any;
+declare var dev_config:any;
+declare var sys_apps_config:any;
 
 @Component({
   selector: 'app-diagram',
@@ -13,104 +20,14 @@ declare var Treant: any;
 })
 export class DiagramComponent implements OnInit {
 
-  archi_config = {
-      chart: {
-          container: "#archiDiagram",
-
-          nodeAlign: "BOTTOM",
-
-          connectors: {
-              type: 'step'
-          },
-          node: {
-              HTMLclass: 'node1'
-          }
-      },
-      nodeStructure: {
-        text: {
-                name: "Architecture"
-            },
-            HTMLclass: 'blue',
-            stackChildren:true,
-            children: [
-                        {
-                            text:{
-                                name: "Analyze"
-                            },
-                            HTMLclass: 'blue',
-                            link: {
-                                href: "http://www.google.com"
-                            }
-                        },
-                        {
-                            text:{
-                                name: "Conception"
-                            },
-                            HTMLclass: 'blue'
-                        },
-                        {
-                            text:{
-                                name: "Technical Recommandation"
-                            },
-                            HTMLclass: 'blue'
-                        }
-                    ]
-      }
-  };
-
-  devops_config = {
-      chart: {
-          container: "#devOpsDiagram",
-
-          nodeAlign: "BOTTOM",
-
-          connectors: {
-              type: 'step'
-          },
-          node: {
-              HTMLclass: 'node1'
-          }
-      },
-      nodeStructure: {
-        text: {
-                name: "DevOps"
-            },
-            HTMLclass: 'blue',
-            stackChildren:true,
-            children: [
-                        {
-                            text:{
-                                name: "Development Environment",
-                                title: "Setup"
-
-                            },
-                            HTMLclass: 'blue',
-                            link: {
-                                href: "http://www.google.com"
-                            }
-                        },
-                        {
-                            text:{
-                                name: "Standard Development"
-                                title: "Rule Configuration"
-                            },
-                            HTMLclass: 'blue'
-                        },
-                        {
-                            text:{
-                                name: "IoC Management"
-                            },
-                            HTMLclass: 'blue'
-                        }
-                    ]
-      }
-  };
-
   constructor() { }
 
   ngOnInit() {
-    new Treant( this.archi_config );
-    new Treant( this.devops_config );
+    new Treant( archi_config );
+    new Treant( devops_config );
+    new Treant( database_config );
+    new Treant( dev_config );
+    new Treant( sys_apps_config );
   }
 
 }
