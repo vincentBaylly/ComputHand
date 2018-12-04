@@ -1,7 +1,14 @@
 <div>
-  <div class="diagram" id="archiDiagram"> --@-- </div>
+  <!-- <div class="diagram" id="archiDiagram"> --@-- </div>
   <div class="diagram" id="devOpsDiagram"> --@-- </div>
   <div class="diagram" id="databaseDiagram"> --@-- </div>
   <div class="diagram" id="devDiagram"> --@-- </div>
-  <div class="diagram" id="sysAppDiagram"> --@-- </div>
+  <div class="diagram" id="sysAppDiagram"> --@-- </div> -->
+  <carousel>
+  <ng-container *ngFor="let item of items;">
+    <ng-container *carouselItem>
+      <div class="item">{{item.title}}</div>
+    </ng-container>
+  </ng-container>
+</carousel>
 </div>

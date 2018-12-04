@@ -20,14 +20,20 @@ declare var sys_apps_config:any;
 })
 export class DiagramComponent implements OnInit {
 
+  items = [
+   { title: 'Slide 1' },
+   { title: 'Slide 2' },
+   { title: 'Slide 3' },
+ ]
+
   constructor() { }
 
   ngOnInit() {
-    new Treant( archi_config );
-    new Treant( devops_config );
-    new Treant( database_config );
-    new Treant( dev_config );
-    new Treant( sys_apps_config );
+    // new Treant( archi_config );
+    // new Treant( devops_config );
+    // new Treant( database_config );
+    // new Treant( dev_config );
+    // new Treant( sys_apps_config );
   }
 
 }
