@@ -5,12 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
-  title = 'presentation';
-
-  items = [
-   { title: 'Slide 1' },
-   { title: 'Slide 2' },
-   { title: 'Slide 3' },
- ]
-}
+export class AppComponent {}
