@@ -7,5 +7,9 @@
     </ng-container>
   </carousel>
 </div>
-<div class="item" id="devDiagram"> --@-- </div>
-<div class="item" id="sysAppDiagram"> --@-- </div>
+<ng-container *ngIf="dev">
+  <div class="item" id="devDiagram"> --@-- </div>
+</ng-container>
+<ng-container *ngIf="sysApp">
+  <div class="item" id="sysAppDiagram"> --@-- </div>
+</ng-container>

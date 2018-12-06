@@ -1,9 +1,7 @@
 var dev_config = {
     chart: {
         container: '#devDiagram',
-
         nodeAlign: 'BOTTOM',
-
         connectors: {
             type: 'step'
         },
@@ -15,14 +13,14 @@ var dev_config = {
       text: {
               name: 'Dev'
           },
-          HTMLclass: 'blue',
+          HTMLclass: 'light-green',
           children: [
                       {
                           text:{
                               name: 'Frontend'
 
                           },
-                          HTMLclass: 'blue',
+                          HTMLclass: 'light-green',
                           link: {
                               href: 'http://www.google.com'
                           },
@@ -31,50 +29,50 @@ var dev_config = {
                                 text:{
                                   name:'HTML/CSS'
                                 },
-                                HTMLclass:'blue'
+                                HTMLclass:'light-green'
                             },
                             {
                               text:{
                                 name:'JavaScript'
                               },
-                              HTMLclass:'blue',
+                              HTMLclass:'light-green',
                               children:[
                                 {
                                   text:{
                                     name:'JQuery'
                                   },
-                                  HTMLclass:'blue'
+                                  HTMLclass:'light-green'
                                 },
                                 {
                                   text:{
                                     name:'Angular ~7/Angular.JS'
                                   },
-                                  HTMLclass:'blue',
+                                  HTMLclass:'light-green',
                                   stackChildren:true,
                                   children:[
                                     {
                                       text:{
                                         name:'jslint'
                                       },
-                                      HTMLclass:'blue'
+                                      HTMLclass:'light-green'
                                     },
                                     {
                                       text:{
                                         name:'karma'
                                       },
-                                      HTMLclass:'blue'
+                                      HTMLclass:'light-green'
                                     },
                                     {
                                       text:{
                                         name:'grunt'
                                       },
-                                      HTMLclass:'blue'
+                                      HTMLclass:'light-green'
                                     },
                                     {
                                       text:{
                                         name:'express'
                                       },
-                                      HTMLclass:'blue'
+                                      HTMLclass:'light-green'
                                     }
                                   ]
                                 }
@@ -86,39 +84,39 @@ var dev_config = {
                           text:{
                               name: 'Backend'
                           },
-                          HTMLclass: 'blue',
+                          HTMLclass: 'light-green',
                           children: [
                             {
                                 text:{
                                     name: 'Java J2EE'
                                 },
-                                HTMLclass: 'blue',
+                                HTMLclass: 'light-green',
                                 stackChildren:true,
                                 children: [
                                   {
                                       text:{
                                           name: 'Struts'
                                       },
-                                      HTMLclass: 'blue'
+                                      HTMLclass: 'light-green'
                                   },
                                   {
                                       text:{
                                           name: 'Spring'
                                       },
-                                      HTMLclass: 'blue',
+                                      HTMLclass: 'light-green',
                                       stackChildren:true,
                                       children:[
                                         {
                                             text:{
                                                 name: 'Spring MVC'
                                             },
-                                            HTMLclass: 'blue'
+                                            HTMLclass: 'light-green'
                                         },
                                         {
                                             text:{
                                                 name: 'Spring Security'
                                             },
-                                            HTMLclass: 'blue'
+                                            HTMLclass: 'light-green'
                                         }
                                       ]
                                   },
@@ -126,7 +124,7 @@ var dev_config = {
                                       text:{
                                           name: 'Hibernate'
                                       },
-                                      HTMLclass: 'blue'
+                                      HTMLclass: 'light-green'
                                   },
                                 ]
                             }

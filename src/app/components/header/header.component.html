@@ -1,5 +1,11 @@
 <mat-toolbar class="main-toolbar">
   <span>Vincent Baylly - Presentation</span>
+  <button mat-icon-button (click)="showDevDiagram()" class="main-menu">
+    <mat-icon>Development Skills</mat-icon>
+  </button>
+  <button mat-icon-button (click)="showSysAppDiagram()" class="main-menu">
+    <mat-icon>System Skills</mat-icon>
+  </button>
   <button mat-icon-button [matMenuTriggerFor]="menu" class="main-menu">
     <mat-icon>more_vert</mat-icon>
   </button>

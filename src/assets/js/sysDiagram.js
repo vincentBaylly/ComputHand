@@ -15,56 +15,56 @@ var sys_apps_config={
     text:{
       name:'System/Apps'
     },
-    HTMLclass:'blue',
+    HTMLclass:'deep-purple',
     children:[
       {
         text:{
           name:'Systems'
         },
-        HTMLclass:'blue',
+        HTMLclass:'deep-purple',
         children:[
           {
             text:{
               name:'Windows'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'UNIX/AIX'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'Linux'
             },
-            HTMLclass:'blue',
+            HTMLclass:'deep-purple',
             stackChildren:true,
             children:[
               {
                 text:{
                   name:'Debian'
                 },
-                HTMLclass:'blue'
+                HTMLclass:'deep-purple'
               },
               {
                 text:{
                   name:'Ubuntu'
                 },
-                HTMLclass:'blue'
+                HTMLclass:'deep-purple'
               },
               {
                 text:{
                   name:'Mint'
                 },
-                HTMLclass:'blue'
+                HTMLclass:'deep-purple'
               },
               {
                 text:{
                   name:'Centos'
                 },
-                HTMLclass:'blue'
+                HTMLclass:'deep-purple'
               },
             ]
           }
@@ -74,44 +74,44 @@ var sys_apps_config={
         text:{
           name:'App server'
         },
-        HTMLclass:'blue',
+        HTMLclass:'deep-purple',
         stackChildren:true,
         children:[
           {
             text:{
               name:'Apache'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'Tomcat/TomEE'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'WebLogic'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'JBoss'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'Nginx'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'NodeJS'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           }
         ]
       },
@@ -119,38 +119,38 @@ var sys_apps_config={
         text:{
           name:'Tools'
         },
-        HTMLclass:'blue',
+        HTMLclass:'deep-purple',
         stackChildren:true,
         children:[
           {
             text:{
               name:'Eclipse/IntelliJ'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'Git/CVS/ClearCase'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'TOAD/SQL Developer'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'Microsoft Office Suites'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           },
           {
             text:{
               name:'Jira'
             },
-            HTMLclass:'blue'
+            HTMLclass:'deep-purple'
           }
         ]
       }

@@ -15,14 +15,14 @@ var archi_config = {
       text: {
               name: 'Architecture'
           },
-          HTMLclass: 'blue',
+          HTMLclass: 'accent-color',
           stackChildren:true,
           children: [
                       {
                           text:{
                               name: 'Analyze'
                           },
-                          HTMLclass: 'blue',
+                          HTMLclass: 'accent-color',
                           link: {
                               href: 'http://www.google.com'
                           }
@@ -31,13 +31,13 @@ var archi_config = {
                           text:{
                               name: 'Conception'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'accent-color'
                       },
                       {
                           text:{
                               name: 'Technical Recommandation'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'accent-color'
                       }
                   ]
     }
@@ -60,7 +60,7 @@ var devops_config = {
       text: {
               name: 'DevOps'
           },
-          HTMLclass: 'blue',
+          HTMLclass: 'dark-primary-color',
           stackChildren:true,
           children: [
                       {
@@ -69,7 +69,7 @@ var devops_config = {
                               title: 'Setup'
 
                           },
-                          HTMLclass: 'blue',
+                          HTMLclass: 'dark-primary-color',
                           link: {
                               href: 'http://www.google.com'
                           }
@@ -79,13 +79,13 @@ var devops_config = {
                               name: 'Standard Development',
                               title: 'Rule Configuration'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'dark-primary-color'
                       },
                       {
                           text:{
                               name: 'IoC Management'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'dark-primary-color'
                       }
                   ]
     }
@@ -108,7 +108,7 @@ var database_config = {
       text: {
               name: 'DataBase'
           },
-          HTMLclass: 'blue',
+          HTMLclass: 'light-primary-color',
           stackChildren:true,
           children: [
                       {
@@ -116,7 +116,7 @@ var database_config = {
                               name: 'MySQL'
 
                           },
-                          HTMLclass: 'blue',
+                          HTMLclass: 'light-primary-color',
                           link: {
                               href: 'http://www.google.com'
                           }
@@ -125,49 +125,49 @@ var database_config = {
                           text:{
                               name: 'PostgreSQL'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'Oracle'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'SQL Server'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'Sybase'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'Derby'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'MongoDB'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'CouchBase'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       },
                       {
                           text:{
                               name: 'NoSQL'
                           },
-                          HTMLclass: 'blue'
+                          HTMLclass: 'light-primary-color'
                       }
                   ]
     }

@@ -20,6 +20,9 @@ declare var sys_apps_config:any;
 })
 export class DiagramComponent  implements AfterViewInit {
 
+  public dev:boolean = false;
+  public sysApp:boolean = false;
+
   items = [
    { id: 'archiDiagram' },
    { id: 'devOpsDiagram' },
@@ -32,8 +35,16 @@ export class DiagramComponent  implements AfterViewInit {
     new Treant( archi_config );
     new Treant( devops_config );
     new Treant( database_config );
-    new Treant( dev_config );
-    new Treant( sys_apps_config );
+  }
+
+  showDevDiagram(){
+      this.dev = !this.dev;
+      new Treant( dev_config );
+  }
+
+  showSysAppDiagram(){
+      this.sysApp = !this.sysApp;
+      new Treant( sys_apps_config );
   }
 
 }
