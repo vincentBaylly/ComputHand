@@ -6,22 +6,27 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DiagramComponent } from './components/diagram/diagram.component';
+import { CarouselComponent, CarouselItemElement } from './components/carousel/carousel.component';
+import { CarouselItemDirective } from './directives/carousel-item.directive';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {
   MatIconModule,
   MatMenuModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatButtonModule
 } from '@angular/material';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DiagramComponent
+    DiagramComponent,
+    CarouselComponent,
+    CarouselItemElement,
+    CarouselItemDirective
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import {
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

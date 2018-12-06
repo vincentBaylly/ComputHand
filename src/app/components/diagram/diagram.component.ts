@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 import '../../../assets/js/raphael.js';
 import '../../../assets/js/Treant.js';
@@ -18,11 +18,17 @@ declare var sys_apps_config:any;
   templateUrl: './diagram.component.html',
   styleUrls: ['./diagram.component.less']
 })
-export class DiagramComponent implements OnInit {
+export class DiagramComponent  implements AfterViewInit {
+
+  items = [
+   { id: 'archiDiagram' },
+   { id: 'devOpsDiagram' },
+   { id: 'databaseDiagram' }
+ ]
 
   constructor() { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     new Treant( archi_config );
     new Treant( devops_config );
     new Treant( database_config );
