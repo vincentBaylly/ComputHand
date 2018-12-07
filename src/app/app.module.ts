@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DiagramComponent } from './components/diagram/diagram.component';
 import { CarouselComponent, CarouselItemElement } from './components/carousel/carousel.component';
 import { CarouselItemDirective } from './directives/carousel-item.directive';
+import { DevDiagramComponent } from './components/dev-diagram/dev-diagram.component';
+import { SysDiagramComponent } from './components/sys-diagram/sys-diagram.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -26,7 +28,9 @@ import {
     DiagramComponent,
     CarouselComponent,
     CarouselItemElement,
-    CarouselItemDirective
+    CarouselItemDirective,
+    DevDiagramComponent,
+    SysDiagramComponent
   ],
   imports: [
     BrowserModule,

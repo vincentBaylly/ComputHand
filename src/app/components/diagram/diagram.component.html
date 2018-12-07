@@ -1,4 +1,4 @@
-<div style="margin: 2em" class="container">
+<div class="container">
   <carousel>
     <ng-container *ngFor="let item of items;">
       <ng-container *carouselItem>
@@ -7,9 +7,3 @@
     </ng-container>
   </carousel>
 </div>
-<ng-container *ngIf="dev">
-  <div class="item" id="devDiagram"> --@-- </div>
-</ng-container>
-<ng-container *ngIf="sysApp">
-  <div class="item" id="sysAppDiagram"> --@-- </div>
-</ng-container>
