@@ -10,6 +10,7 @@ import { CarouselComponent, CarouselItemElement } from './components/carousel/ca
 import { CarouselItemDirective } from './directives/carousel-item.directive';
 import { DevDiagramComponent } from './components/dev-diagram/dev-diagram.component';
 import { SysDiagramComponent } from './components/sys-diagram/sys-diagram.component';
+import { HomeComponent } from './components/home/home.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -30,7 +31,8 @@ import {
     CarouselItemElement,
     CarouselItemDirective,
     DevDiagramComponent,
-    SysDiagramComponent
+    SysDiagramComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

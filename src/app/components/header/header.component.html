@@ -1,7 +1,9 @@
 <mat-toolbar class="main-toolbar">
   <span>Vincent Baylly - Presentation</span>
+  <button mat-button [routerLink]="['/home']">Home</button>
   <button mat-button [routerLink]="['/devdiagram']">Development Skills</button>
   <button mat-button [routerLink]="['/sysdiagram']">System Skills</button>
+  <button mat-button [routerLink]="['/devdiagram']">Extra Skills</button>
   <button mat-icon-button [matMenuTriggerFor]="menu" class="main-menu">
     <mat-icon>more_vert</mat-icon>
   </button>
