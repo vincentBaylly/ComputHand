@@ -59,7 +59,7 @@
               "i18nFile": "src/locale/messages.en.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "en",
-              "i18nMissingTranslation": "error"
+              "i18nMissingTranslation": "error",
               "budgets": [
                 {
                   "type": "initial",
@@ -88,7 +88,7 @@
               "i18nFile": "src/locale/messages.fr.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "fr",
-              "i18nMissingTranslation": "error"
+              "i18nMissingTranslation": "error",
               "budgets": [
                 {
                   "type": "initial",
@@ -97,6 +97,7 @@
                 }
               ]
             }
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
