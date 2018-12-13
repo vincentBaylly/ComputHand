@@ -1,14 +1,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div class="wrapper">
-    <div class="header">
-      <!-- header -->
-      <app-header></app-header>
-    </div>
-    <div class="main">
-      <router-outlet></router-outlet>
-    </div>
-    <footer class="footer">
-      <!-- footer -->
-      <app-footer></app-footer>
-    </footer>
+<div class="Site-inner Site-inner--index" data-controller="HeaderOverlay">
+  <app-header></app-header>
+  <div class="Content-outer">
+    <router-outlet></router-outlet>
+  </div>
 </div>
+<app-footer></app-footer>

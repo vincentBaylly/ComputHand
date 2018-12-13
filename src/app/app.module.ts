@@ -11,17 +11,21 @@ import { CarouselItemDirective } from './directives/carousel-item.directive';
 import { DevDiagramComponent } from './components/dev-diagram/dev-diagram.component';
 import { SysDiagramComponent } from './components/sys-diagram/sys-diagram.component';
 import { HomeComponent } from './components/home/home.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { LicenseComponent } from './components/license/license.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {
   MatIconModule,
   MatMenuModule,
-  MatToolbarModule,
-  MatButtonModule
+  MatButtonModule,
+  MatSidenavModule,
+  MatListModule,
+  MatToolbarModule
 } from '@angular/material';
-import { ResumeComponent } from './components/resume/resume.component';
-import { LicenseComponent } from './components/license/license.component';
+
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -42,10 +46,13 @@ import { LicenseComponent } from './components/license/license.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     MatIconModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
