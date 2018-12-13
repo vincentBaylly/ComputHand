@@ -1,24 +1,19 @@
-<mat-toolbar class="main-toolbar">
-  <span>Vincent Baylly - Presentation</span>
-  <button mat-button [routerLink]="['/home']">Home</button>
-  <button mat-button [routerLink]="['/devdiagram']">Development Skills</button>
-  <button mat-button [routerLink]="['/sysdiagram']">System Skills</button>
-  <button mat-button [routerLink]="['/devdiagram']">Extra Skills</button>
-  <button mat-icon-button [matMenuTriggerFor]="menu" class="main-menu">
-    <mat-icon>more_vert</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>dialpad</mat-icon>
-      <span>Redial</span>
-    </button>
-    <button mat-menu-item disabled>
-      <mat-icon>voicemail</mat-icon>
-      <span>Check voicemail</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>notifications_off</mat-icon>
-      <span>Disable alerts</span>
-    </button>
-  </mat-menu>
-</mat-toolbar>
+<header class="Header Header--bottom Header--overlay">
+  <div class="Header-inner Header-inner--bottom">
+    <div data-nc-container="bottom-left">
+    </div>
+    <div data-nc-container="bottom-center">
+    </div>
+    <div data-nc-container="bottom-right">
+      <!-- <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
+          <div class="Header-nav-inner">
+            <button mat-button [routerLink]="['/home']">Home</button>
+            <button mat-button [routerLink]="['/resume']">Resume</button>
+            <button mat-button [routerLink]="['/devdiagram']">Development Skills</button>
+            <button mat-button [routerLink]="['/sysdiagram']">System Skills</button>
+            <button mat-button [routerLink]="['/devdiagram']">Extra Skills</button>
+          </div>
+      </nav> -->
+    </div>
+  </div>
+</header>

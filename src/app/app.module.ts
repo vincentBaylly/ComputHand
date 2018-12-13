@@ -20,6 +20,8 @@ import {
   MatToolbarModule,
   MatButtonModule
 } from '@angular/material';
+import { ResumeComponent } from './components/resume/resume.component';
+import { LicenseComponent } from './components/license/license.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {
     CarouselItemDirective,
     DevDiagramComponent,
     SysDiagramComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeComponent,
+    LicenseComponent
   ],
   imports: [
     BrowserModule,
