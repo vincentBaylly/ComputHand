@@ -1,15 +1,10 @@
 <header class="Header Header--bottom Header--overlay">
   <div class="Header-inner Header-inner--bottom">
     <div data-nc-container="bottom-left">
-    </div>
-    <div data-nc-container="bottom-center">
-    </div>
-    <div data-nc-container="bottom-right">
       <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
           <div class="Header-nav-inner">
             <button mat-icon-button (click)="openMenu()" [matMenuTriggerFor]="appMenu" fxShow="true" fxHide.gt-xs>
               <mat-icon class="white-icon">{{icon}}</mat-icon>
-              <a [routerLink]="['/home']"><img src="/assets/img/computhand.png" alt="logo" /></a>
             </button>
             <span class="menu-spacer"></span>
             <div fxShow="true" fxHide.lt-sm>
@@ -19,7 +14,6 @@
               <a class="Header-nav-item" [routerLink]="['/devdiagram']">Development Skills</a>
               <a class="Header-nav-item" [routerLink]="['/sysdiagram']">System Skills</a>
               <a class="Header-nav-item" [routerLink]="['/devdiagram']">Extra Skills</a>
-              <a [routerLink]="['/home']"><img src="/assets/img/computhand.png" alt="logo" /></a>
             </div>
             <mat-menu class="app-menu" #appMenu="matMenu" fxFlexFill>
               <button class="hover-effect" mat-button [routerLink]="['/home']">Home</button>
@@ -30,6 +24,13 @@
             </mat-menu>
           </div>
       </nav>
+    </div>
+    <div data-nc-container="bottom-center">
+    </div>
+    <div data-nc-container="bottom-right">
+      <div class="logo">
+        <a [routerLink]="['/home']"><img src="/assets/img/computhand.png" alt="logo"/></a>
+      </div>
     </div>
   </div>
 </header>
