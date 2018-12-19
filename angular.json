@@ -29,14 +29,17 @@
             ],
             "styles": [
               "src/styles.less",
-              "src/table.less"
+              "src/assets/css/table.less",
+              "src/assets/css/diagram.less"
             ],
             "scripts": [
               "src/assets/js/diagram.js",
               "src/assets/js/Treant.js",
               "src/assets/js/raphael.js",
               "src/assets/js/devDiagram.js",
-              "src/assets/js/sysDiagram.js"
+              "src/assets/js/devDiagramInline.js",
+              "src/assets/js/sysDiagram.js",
+              "src/assets/js/sysDiagramInline.js"
             ]
           },
           "configurations": {
@@ -132,14 +135,17 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.less",
-              "src/table.less"
+              "src/assets/css/table.less",
+              "src/assets/css/diagram.less"
             ],
             "scripts": [
               "src/assets/js/diagram.js",
               "src/assets/js/Treant.js",
               "src/assets/js/raphael.js",
               "src/assets/js/devDiagram.js",
-              "src/assets/js/sysDiagram.js"
+              "src/assets/js/devDiagramInline.js",
+              "src/assets/js/sysDiagram.js",
+              "src/assets/js/sysDiagramInline.js"
             ],
             "assets": [
               "src/favicon.ico",

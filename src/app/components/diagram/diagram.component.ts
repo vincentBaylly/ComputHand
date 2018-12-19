@@ -16,9 +16,6 @@ declare var database_config: any;
 })
 export class DiagramComponent  implements AfterViewInit {
 
-  public dev:boolean = false;
-  public sysApp:boolean = false;
-
   items = [
    { id: 'archiDiagram' },
    { id: 'devOpsDiagram' },
