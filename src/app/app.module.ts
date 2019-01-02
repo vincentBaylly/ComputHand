@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from  '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,8 +15,10 @@ import { SysDiagramComponent } from './components/sys-diagram/sys-diagram.compon
 import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { LicenseComponent } from './components/license/license.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
   MatIconModule,
@@ -24,8 +28,6 @@ import {
   MatListModule,
   MatToolbarModule
 } from '@angular/material';
-
-import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -40,10 +42,13 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     SysDiagramComponent,
     HomeComponent,
     ResumeComponent,
-    LicenseComponent
+    LicenseComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,

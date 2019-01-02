@@ -6,6 +6,7 @@ import { DiagramComponent } from './components/diagram/diagram.component';
 import { SysDiagramComponent } from './components/sys-diagram/sys-diagram.component';
 import { DevDiagramComponent } from './components/dev-diagram/dev-diagram.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { LicenseComponent } from './components/license/license.component';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'diagram', component: DiagramComponent },
   { path: 'devdiagram', component: DevDiagramComponent },
   { path: 'sysdiagram', component: SysDiagramComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'termOfService', component: LicenseComponent }
 ];
 
