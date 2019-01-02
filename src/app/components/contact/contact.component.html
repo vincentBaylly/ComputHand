@@ -1,0 +1,45 @@
+<main class="Index" data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation">
+  <section id="resume-header" class="Index-page Index-page--has-image" data-parallax-original-element data-edit-main-image="Background">
+    <div class="Index-page-content  vba-alternate-block-style-container">
+      <h1 align="center">CONTACT US!</h1>
+    </div>
+  </section>
+  <section id="contact-content" class="Index-page" data-edit-main-image="Background">
+    <div class="Index-page-content ">
+      <div class="row vba-row">
+        <div class="col vba-col-12 span-12">
+          <div class="vba-block html-block vba-block-html" data-block-type="2">
+            <div class="vba-block-content" align="center">
+              <h3 *ngIf="showSuccessMessage">Thanks for your message!</h3>
+              <!-- form goes here -->
+              <form (ngSubmit)="processForm()">
+                <!-- name -->
+                <div class="field">
+                  <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required minlength="3" #nameInput="ngModel">
+                  <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+                    Name is required and needs to be at least 3 characters long.
+                  </div>
+                </div>
+                <!-- email -->
+                <div class="field">
+                  <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" required email #emailInput="ngModel">
+                  <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                    Needs to be a valid email.
+                  </div>
+                </div>
+                <!-- message -->
+                <div class="field">
+                  <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required #messageInput="ngModel"></textarea>
+                  <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                    Your message is required!
+                  </div>
+                </div>
+                <button type="submit" class="button is-danger is-large">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
