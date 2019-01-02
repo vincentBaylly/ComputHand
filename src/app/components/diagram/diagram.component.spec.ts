@@ -1,6 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Component } from '@angular/core';
 import { DiagramComponent } from './diagram.component';
+
+@Component({
+  selector: 'carousel',
+  template: '<div id="archiDiagram"></div><div id="devOpsDiagram"></div><div id="databaseDiagram"></div>'
+})
+class MockCarouselComponent {
+}
+
 
 describe('DiagramComponent', () => {
   let component: DiagramComponent;
@@ -8,7 +16,10 @@ describe('DiagramComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiagramComponent ]
+      declarations: [
+        DiagramComponent,
+        MockCarouselComponent
+      ]
     })
     .compileComponents();
   }));

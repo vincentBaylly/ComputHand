@@ -1,8 +1,38 @@
-import { CarouselitemDirective } from './carouselitem.directive';
+import { CarouselItemDirective } from './carousel-item.directive';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
-describe('CarouselitemDirective', () => {
+@Component({
+  template: '<carousel><div>item1</div><div>item2</div></carousel>'
+})
+class TestCarouselItemsComponent {
+}
+
+@Component({
+  selector: 'carousel',
+  template: ''
+})
+class MockCarouselComponent {
+}
+
+describe('Directive: CarouselItem', () => {
+
+  let component: TestCarouselItemsComponent;
+  let fixture: ComponentFixture<TestCarouselItemsComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [
+        CarouselItemDirective,
+        TestCarouselItemsComponent,
+        MockCarouselComponent
+      ]
+    });
+    fixture = TestBed.createComponent(TestCarouselItemsComponent);
+    component = fixture.componentInstance;
+  });
+
   it('should create an instance', () => {
-    const directive = new CarouselitemDirective();
-    expect(directive).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 });
