@@ -1,4 +1,4 @@
-import { Component, AfterContentInit, HostListener} from '@angular/core';
+import { Component, AfterContentInit, HostListener } from '@angular/core';
 
 import '../../../assets/js/raphael.js';
 import '../../../assets/js/Treant.js';

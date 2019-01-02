@@ -1,6 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Component } from '@angular/core';
 import { SysDiagramComponent } from './sys-diagram.component';
+
+@Component({
+  selector: 'carousel',
+  template: ''
+})
+class MockCarouselComponent {
+}
 
 describe('SysDiagramComponent', () => {
   let component: SysDiagramComponent;
@@ -8,7 +15,10 @@ describe('SysDiagramComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SysDiagramComponent ]
+      declarations: [
+        SysDiagramComponent,
+        MockCarouselComponent
+      ]
     })
     .compileComponents();
   }));

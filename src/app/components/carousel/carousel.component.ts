@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ContentChildren, Directive, ElementRef, Input, OnInit, QueryList, TemplateRef, ViewChild, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ContentChildren, Directive, ElementRef, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { animate, AnimationBuilder, AnimationFactory, AnimationPlayer, style } from '@angular/animations';
 
 import { CarouselItemDirective } from '../../directives/carousel-item.directive';
