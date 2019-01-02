@@ -26,7 +26,9 @@ import {
   MatButtonModule,
   MatSidenavModule,
   MatListModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
 
 @NgModule({
@@ -57,6 +59,8 @@ import {
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
     FlexLayoutModule
   ],
   providers: [],
