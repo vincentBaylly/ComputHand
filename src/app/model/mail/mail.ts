@@ -22,24 +22,24 @@ export function createMail(mail: Mail): { from: string; name: string; text: stri
     if (mail.from.match(emailPattern)) {
       mailToSend.from = mail.from;
     } else {
-      throw 'the email provide is not valid';
+      throw 'Error Validaton: the email provide is not valid!';
     }
 
-    if (mail.name.length < 3) {
+    if (mail.name.length > 3) {
       mailToSend.subject = MailConfig.subject + ' ' + mail.name;
     } else {
-      throw 'Name is required and needs to be at least 3 characters long.';
+      throw 'Error Validaton: Name is required and needs to be at least 3 characters long!';
     }
 
     if(mail.text.length < 150){
       mailToSend.text = mail.text;
     }else{
-      throw 'The mail text is to long';
+      throw 'Error Validaton: The mail text is to long!';
     }
 
   }
   catch (e) {
-    console.log(e);
+    console.error(e);
   }
 
   return mailToSend;
