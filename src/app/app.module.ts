@@ -19,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { GoogleMapsModule } from 'google-maps-module';
 
 import {
   MatIconModule,
@@ -30,6 +31,7 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
+import { HousingComponent } from './components/housing/housing.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import {
     HomeComponent,
     ResumeComponent,
     LicenseComponent,
-    ContactComponent
+    ContactComponent,
+    HousingComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +64,8 @@ import {
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

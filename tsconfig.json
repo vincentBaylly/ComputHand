@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "google-maps-module": [
+        "dist/google-maps-module"
+      ],
+      "google-maps-module/*": [
+        "dist/google-maps-module/*"
+      ]
+    }
   }
 }
