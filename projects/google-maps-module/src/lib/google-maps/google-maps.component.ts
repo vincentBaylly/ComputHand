@@ -99,11 +99,13 @@ export class GoogleMapsComponent implements OnInit {
       var citylist = document.getElementById("citylist");
       var center = document.getElementById("center");
       var option = document.getElementById("option");
+      var duProprio = document.getElementById("duProprio");
 
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(container);
       this.map.controls[google.maps.ControlPosition.TOP_RIGHT].push(citylist);
       this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(center);
       this.map.controls[google.maps.ControlPosition.TOP_RIGHT].push(option);
+      this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(duProprio);
 
       this.loadDeclaredMarkers();
     });
