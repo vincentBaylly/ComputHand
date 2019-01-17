@@ -40,9 +40,16 @@ JavaScipt library for visualization of tree diagrams:
 
 http://fperucic.github.io/treant-js/
 
+Mailgun
+Powerful APIs that enable you to send, receive and track email effortlessly.
+https://www.mailgun.com/
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Integrate Jenkins
+https://wiki.jenkins.io/display/JENKINS/Github+Plugin
 
 # License
 [![Apache 2.0 License](https://img.shields.io/crates/l/:crate.svg?style=flat)](/LICENSE)
