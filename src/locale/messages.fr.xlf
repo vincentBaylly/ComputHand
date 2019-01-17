@@ -2,16 +2,483 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="contactTitle" datatype="html">
-        <source>
-          Lead Technique Java J2EE/Angular
-          1375 103e Avenue
-          G9P 1H1 Shawinigan, QC
-          vincent.baylly@computhand.com
-        </source>
+      <trans-unit id="homeLink" datatype="html">
+        <source>Home</source>
+        <target>Accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">the home link</note>
+        <note priority="1" from="meaning">home link</note>
+      </trans-unit>
+      <trans-unit id="resumeMenuLink" datatype="html">
+        <source>Resume</source>
+        <target>CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">the resume link</note>
+        <note priority="1" from="meaning">resume link</note>
+      </trans-unit>
+      <trans-unit id="devSkillsLink" datatype="html">
+        <source>Dev Skills</source>
+        <target>Compétences Dev</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">the dev skills links</note>
+        <note priority="1" from="meaning">dev skills link</note>
+      </trans-unit>
+      <trans-unit id="sysSkillsLink" datatype="html">
+        <source>System Skills</source>
+        <target>Compétences Systeme</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">the system skills link</note>
+        <note priority="1" from="meaning">system skills link</note>
+      </trans-unit>
+      <trans-unit id="extraSkillsLink" datatype="html">
+        <source>Extra Skills</source>
+        <target>Compétences Additionnels</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">the extra skills link</note>
+        <note priority="1" from="meaning">extra skills link</note>
+      </trans-unit>
+      <trans-unit id="contactLink" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/header/header.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">the contact link</note>
+        <note priority="1" from="meaning">contact link</note>
+      </trans-unit>
+      <trans-unit id="copyrightText" datatype="html">
+        <source>Copright © <x id="INTERPOLATION" equiv-text="{{year}}"/> - 9383 9322 Quebec Inc. - ComputHand - All Rights Reserved</source>
+        <target>Droit d'auteur © <x id="INTERPOLATION" equiv-text="{{year}}"/> - 9383 9322 Quebec Inc. - ComputHand - Tous droits réservés</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">the copyright text</note>
+        <note priority="1" from="meaning">copyright</note>
+      </trans-unit>
+      <trans-unit id="termsServiceLink" datatype="html">
+        <source>Terms of Service</source>
+        <target>Conditions d'utilisation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">the terms of service links</note>
+        <note priority="1" from="meaning">terms of service link</note>
+      </trans-unit>
+      <trans-unit id="extraSkillsTitle" datatype="html">
+        <source>EXTRA SKILLS</source>
+        <target>COMPETENCES ADDITIONNELS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/diagram/diagram.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">the extra skills title</note>
+        <note priority="1" from="meaning">extra skills title</note>
+      </trans-unit>
+      <trans-unit id="devSkillsTitle" datatype="html">
+        <source>DEV SKILLS</source>
+        <target>COMPETENCES DEV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/dev-diagram/dev-diagram.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">the dev skills title</note>
+        <note priority="1" from="meaning">dev skills title</note>
+      </trans-unit>
+      <trans-unit id="sysSkillsTitle" datatype="html">
+        <source>SYSTEM SKILLS</source>
+        <target>COMPETENCES SYSTEME</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/sys-diagram/sys-diagram.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">the system skills title</note>
+        <note priority="1" from="meaning">system skills title</note>
+      </trans-unit>
+      <trans-unit id="homeTitle" datatype="html">
+        <source>Programmer</source>
+        <target>Programmeur</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/components/home/home.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">the professional title</note>
+        <note priority="1" from="meaning">home title</note>
+      </trans-unit>
+      <trans-unit id="homeDescription" datatype="html">
+        <source>Specialized in Web - Java/J2EE - Angular</source>
+        <target>Specialisé en Web - Java/J2EE - Angular</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/home/home.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">the professional description</note>
+        <note priority="1" from="meaning">home description</note>
+      </trans-unit>
+      <trans-unit id="homeResume" datatype="html">
+        <source>
+        Having more than 10 years in IT computing especially in web domain, my last experience provides me the skill to give more than just development expertise. I am today able to lead interviews, provide technical and architectural advices, manage a team and add technical analysis in my deliveries. These past expériences allow me to open my own business today. I am looking for IT contracts to offer my skills more efficiently.
+        </source>
+        <target>
+        Ayant plus de 10 ans d'expérience dans le domaine des TI particulièrement dans le domaine du web, mes dernières expériences m'ont permis d'élargir mes champs de compétences au-delà du développement. Je peux aujourd'hui faire passer des entrevues, fournir des conseils techniques et architecturaux, diriger une équipe ainsi qu ajouter de l'analyse à mes livraisons techniques. Ces dernières expériences m'ont permis d'ouvrir ma compagnie. Je cherche actuellement des contrats en TI afin d'apporter mes compétences plus efficacement.
+      </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/home/home.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">the professional resume</note>
+        <note priority="1" from="meaning">home resume</note>
+      </trans-unit>
+      <trans-unit id="homeGitLink" datatype="html">
+        <source>My gitHub with some of my personal project: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>GitHub - vincentBaylly<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>Mon gitHub contenant certain de mes projets personnels: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>GitHub - vincentBaylly<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/home/home.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">the GitHub link</note>
+        <note priority="1" from="meaning">home git link</note>
+      </trans-unit>
+      <trans-unit id="homeLinkedinLink" datatype="html">
+        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>My LinkedIn<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Mon LinkedIn<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/home/home.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">the Linked In link</note>
+        <note priority="1" from="meaning">home linkedin link</note>
+      </trans-unit>
+      <trans-unit id="resumeDownloadTitle" datatype="html">
+        <source>Download My Resume, Here</source>
+        <target>Télécharger mon CV, Ici</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">the resume download title</note>
+        <note priority="1" from="meaning">resume download title</note>
+      </trans-unit>
+      <trans-unit id="resumeLink" datatype="html">
+        <source>Download Resume</source>
+        <target>Téléchargement CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">the resume download link</note>
+        <note priority="1" from="meaning">resume download link</note>
+      </trans-unit>
+      <trans-unit id="resumeTitle" datatype="html">
+        <source>Development</source>
+        <target>Développement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">the resume title</note>
+        <note priority="1" from="meaning">resume title</note>
+      </trans-unit>
+      <trans-unit id="experienceTitle" datatype="html">
+        <source>Work Experience</source>
+        <target>Experience de travail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <note priority="1" from="description">the experience title</note>
+        <note priority="1" from="meaning">experience title</note>
+      </trans-unit>
+      <trans-unit id="soaTitle" datatype="html">
+        <source>SOA Technical analyst</source>
+        <target>Analyste Technique SOA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <note priority="1" from="description">the soa title</note>
+        <note priority="1" from="meaning">soa title</note>
+      </trans-unit>
+      <trans-unit id="soaIntactDescription" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Intact<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – OCTOBER 2018 – DECEMBER 2018<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Join a Team Squad of 10 members – 6 Developer, 2 QA, 1 Analyst,1 Scrum Master.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Implementation of one of the back-end part in the SOA Architecture, to expose web services for the rating of Intact for Intact third part partner in the west Canada<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Intact<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – OCTOBER 2018 – DECEMBER 2018<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Membre d'un squad de 11 personnes - 6 developpeurs, 2 Analyste d'affaires, 2 QA, 1 Scrum Master.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Evolution dans l'une des parties backend de l'architecture SOA, pour la mise en place de web service pour l’intégration des compagnies partenaires d'Intact de l"Ouest Canadien.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note priority="1" from="description">the intact description</note>
+        <note priority="1" from="meaning">soa intact description</note>
+      </trans-unit>
+      <trans-unit id="technicalTitle" datatype="html">
+        <source>Technical Lead</source>
+        <target>Responsable Technique</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <note priority="1" from="description">the technical title</note>
+        <note priority="1" from="meaning">technical title</note>
+      </trans-unit>
+      <trans-unit id="decathlonDescription" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Decathlon<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – JUNE 2018 – OCTOBER 2018<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Part of a team with 2 Technical leads of at team of 14 peoples.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Developing an application from scratch of tills management to materialized the tills devices.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          (manager centralize and middle-ware tills manager installable on any devices)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Decathlon<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – JUNE 2018 – OCTOBER 2018<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Etant l'un des deux Responsables Techniques d'une equipe de 14 personnes.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Developpement complet d'un application de gestion de caisse pour la dematerialisation des appareils.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          (gestionnaire central des caisses ainsi que les applications embarquees sur les caisses)<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <note priority="1" from="description">the decathlon description</note>
+        <note priority="1" from="meaning">decathlon description</note>
+      </trans-unit>
+      <trans-unit id="seniorTitle" datatype="html">
+        <source>Senior Developer</source>
+        <target>Développeur Sénior</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <note priority="1" from="description">the senior title</note>
+        <note priority="1" from="meaning">senior title</note>
+      </trans-unit>
+      <trans-unit id="montrealTitle" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Ville de Montréal<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – FEBRUARY 2018 - MARCH 2018<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          As senior developer I develop a big part of the middle-ware/back-end of a self content NodeJS application:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          • Application conception<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          • Development and Production Environment implementation<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          • Application development.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Ville de Montréal<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – FEBRUARY 2018 - MARCH 2018<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          En tant que developpeur senior, j'ai developpe un grand partie du middle-ware/back-end d'un application NodeJS<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          • Conception Applicative<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          • Implementation des environnements de developpement et de production<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          • Developpement de l'application.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <note priority="1" from="description">the montreal title</note>
+        <note priority="1" from="meaning">montreal title</note>
+      </trans-unit>
+      <trans-unit id="totalDescription" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Total<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – JUNE 2017 - SEPTEMBER 2017<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          After the outsourcing signing, CGI implement a budget manager.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          From the conception to the delivery, I have been in charge of the architecture and the development management.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          The application have been implemented in multi-tier architecture. A front end part used the last technology on the market, NodeJS, AngularJS, bower, bootstrap.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          The Back end part exposed REST services implemented with Spring REST, Spring Security, Hibernate  as well as Flyway to keep the database integrity.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Total<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – JUNE 2017 - SEPTEMBER 2017<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Suite à la signature de la sous-traitance, CGI a implementé un gestionnaire de budget<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          De la conception à la livraison, j'ai été en charge de l'architecture et de la gestion du développement<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          l'application a été implementé dans une architecture multi-tier. Une partie front end utilisant les dernieres technologie sur le marché, NodeJS, AngularJS, bower, bootstrap<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          The Back end part exposed REST services implemented with Spring REST, Spring Security, Hibernate  as well as Flyway to keep the database integrity.
+          La partie backend exposant des services REST implementés avec Spring REST, Spring Security, Hibernate ainsi que Flyway pour la conservation de l'integrité des données de la base<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <note priority="1" from="description">the total description</note>
+        <note priority="1" from="meaning">total description</note>
+      </trans-unit>
+      <trans-unit id="californiaDescription" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>California Government, Sacramento<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – JANUARY 2017 - FEBRUARY 2017<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          To respond to an IT Challenge propose by the State of California, we develop an notifier application for web and mobile.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          This notifications used GEO-Localization to send information about disaster near the user.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          This web site was made in collaboration with CGI Sacramento office<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>California Government, Sacramento<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> – JANUARY 2017 - FEBRUARY 2017<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Dans le cadre d’une réponse à un appel d’offre de l’état de Californie, nous avons développé une application de gestion de notifications.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Ces notifications utilisant la géolocalisation pour transmettre des informations de catastrophe naturelle survenue dans une zone proche de l’utilisateur.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Cette application a été réalisée en collaboration avec les bureaux CGI de Sacramento.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resume/resume.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <note priority="1" from="description">the california description</note>
+        <note priority="1" from="meaning">california description</note>
+      </trans-unit>
+      <trans-unit id="contactUsTitle" datatype="html">
+        <source>CONTACT US!</source>
+        <target>CONTACTEZ NOUS!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/404/404.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">the contact us title</note>
+        <note priority="1" from="meaning">contact us title</note>
+      </trans-unit>
+      <trans-unit id="nameError" datatype="html">
+        <source>
+          Name is required and needs to be at least 3 characters long.
+        </source>
+        <target>
+          Le nom est obligatoire et doit comporter au moins 3 caractères..
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">the name error description</note>
+        <note priority="1" from="meaning">name error</note>
+      </trans-unit>
+      <trans-unit id="emailError" datatype="html">
+        <source>
+          Needs to be a valid email.
+        </source>
+        <target>
+          Doit être un email valide.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">the email error description</note>
+        <note priority="1" from="meaning">email error</note>
+      </trans-unit>
+      <trans-unit id="messageError" datatype="html">
+        <source>
+          Your message is required!
+        </source>
+        <target>
+          Votre message est obligatoire
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">the message error description</note>
+        <note priority="1" from="meaning">message error</note>
+      </trans-unit>
+      <trans-unit id="submitButton" datatype="html">
+        <source>Submit</source>
+        <target>Envoyer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/contact/contact.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">the submit button</note>
+        <note priority="1" from="meaning">submit button</note>
+      </trans-unit>
+      <trans-unit id="housingTitle" datatype="html">
+        <source>Google Maps</source>
+        <target>Google Maps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/housing/housing.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">the housing title</note>
+        <note priority="1" from="meaning">housing title</note>
+      </trans-unit>
+      <trans-unit id="housingDescription" datatype="html">
+        <source>
+          Integration the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>google maps module<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          using <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>duProprio<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> API to add some marker on the maps.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          The call to the api is done with <x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;"/>express<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          Integration de la librairie <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>google maps module<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          utilisant <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>duProprio<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> API pour ajouter des marqueurs sur la carte.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          L'appel a l'API est fait en utilisant <x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;"/>express<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/housing/housing.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">the housing description</note>
+        <note priority="1" from="meaning">housing description</note>
+      </trans-unit>
+      <trans-unit id="notFoundTitle" datatype="html">
+        <source>
+          Not found 404
+        </source>
+        <target>
+          Page introuvable 404
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/404/404.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
     </body>

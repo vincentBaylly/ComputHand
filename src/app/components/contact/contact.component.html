@@ -1,7 +1,7 @@
 <main class="Index" data-controller="IndexFirstSectionHeight, Parallax, IndexNavigation">
   <section id="resume-header" class="Index-page Index-page--has-image" data-parallax-original-element data-edit-main-image="Background">
     <div class="Index-page-content  vba-alternate-block-style-container">
-      <h1 align="center">CONTACT US!</h1>
+      <h1 i18n="contact us title|the contact us title@@contactUsTitle" align="center">CONTACT US!</h1>
     </div>
   </section>
   <section id="contact-content" class="Index-page" data-edit-main-image="Background">
@@ -18,7 +18,7 @@
                   <mat-form-field class="mat-headline">
                     <input matInput type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required minlength="3" #nameInput="ngModel">
                   </mat-form-field>
-                  <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+                  <div i18n="name error|the name error description@@nameError" class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
                     Name is required and needs to be at least 3 characters long.
                   </div>
                 </div>
@@ -27,7 +27,7 @@
                   <mat-form-field class="mat-headline">
                     <input matInput type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" required email #emailInput="ngModel">
                   </mat-form-field>
-                  <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                  <div i18n="email error|the email error description@@emailError" class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
                     Needs to be a valid email.
                   </div>
                 </div>
@@ -36,11 +36,11 @@
                   <mat-form-field class="mat-headline">
                     <textarea matInput class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required #messageInput="ngModel"></textarea>
                   </mat-form-field>
-                  <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
+                  <div i18n="message error|the message error description@@messageError" class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
                     Your message is required!
                   </div>
                 </div>
-                <button mat-raised-button type="submit" class="button is-danger is-large">Submit</button>
+                <button i18n="submit button|the submit button@@submitButton" mat-raised-button type="submit" class="button is-danger is-large">Submit</button>
               </form>
             </div>
           </div>
