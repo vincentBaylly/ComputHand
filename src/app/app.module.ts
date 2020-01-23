@@ -19,7 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { GoogleMapsModule } from 'google-maps-module';
+//import { GoogleMapsModule } from 'google-maps-module';
 
 import {
   MatIconModule,
@@ -31,7 +31,7 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
-import { HousingComponent } from './components/housing/housing.component';
+//import { HousingComponent } from './components/housing/housing.component';
 
 @NgModule({
   declarations: [
@@ -47,8 +47,8 @@ import { HousingComponent } from './components/housing/housing.component';
     HomeComponent,
     ResumeComponent,
     LicenseComponent,
-    ContactComponent,
-    HousingComponent
+    ContactComponent
+    //HousingComponent
   ],
   imports: [
     BrowserModule,
@@ -64,8 +64,8 @@ import { HousingComponent } from './components/housing/housing.component';
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    FlexLayoutModule,
-    GoogleMapsModule
+    FlexLayoutModule
+    //GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

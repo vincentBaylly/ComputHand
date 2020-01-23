@@ -8,7 +8,7 @@ import { DevDiagramComponent } from './components/dev-diagram/dev-diagram.compon
 import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LicenseComponent } from './components/license/license.component';
-import { HousingComponent } from './components/housing/housing.component';
+//import { HousingComponent } from './components/housing/housing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'sysdiagram', component: SysDiagramComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'termOfService', component: LicenseComponent },
-  { path: 'mapsDemo', component: HousingComponent }
+  //{ path: 'mapsDemo', component: HousingComponent }
 ];
 
 @NgModule({
