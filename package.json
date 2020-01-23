@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "postbuild": "cp -R dist/presentation/* ../vincentBaylly.github.io/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
