@@ -9,7 +9,7 @@ import { MatMenuTrigger } from '@angular/material';
 })
 export class HeaderComponent implements OnInit {
 
-  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+  @ViewChild(MatMenuTrigger, {static: false}) trigger: MatMenuTrigger;
   icon = 'menu';
   opened = false;
 
