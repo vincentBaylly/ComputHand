@@ -1,0 +1,43 @@
+<% let homeActiveClass %>
+<% let authorActiveClass %>
+<% let skillsActiveClass %>
+<% let contactActiveClass %>
+<% if (active==='home') { %>
+  <% homeActiveClass='class=active' %>
+<% } else if (active==='author') { %>
+  <% authorActiveClass='class=active' %>
+<% } else if (active==='skills') { %>
+  <% skillsActiveClass='class=active' %>
+<% } else if (active==='contact') { %>
+  <% contactActiveClass='class=active' %>
+<% } %>
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li <%=homeActiveClass%> >
+        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+      </li>
+      <li <%=authorActiveClass%>>
+        <a href="https://www.linkedin.com/in/vincent-baylly-484a0070/" target="_blank"><span class="glyphicon glyphicon-user"></span> Auteur</a>
+      </li>
+      <li <%=skillsActiveClass%>>
+        <a href="/skills"><span class="glyphicon glyphicon-bishop"></span> Competence</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Projets <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://advicehood.herokuapp.com/" target="_blank"> AdviceHood</a></li>
+            <li><a href="https://community-mapper.herokuapp.com/" target="_blank"> Community Mapper</a></li>
+            <li><a href="https://moryici.herokuapp.com/" target="_blank"> Mon Rythme Ici</a></li>
+            <li><a href="https://georisk-shawi.herokuapp.com/" target="_blank"> Georisk</a></li>
+            <li class="divider"></li>
+            <li><a href="https://github.com/vincentBaylly" target="_blank"> GitHub - Projects</a></li>
+            <li><a href="https://gitlab.com/vincentBaylly" target="_blank"> GitLab - Projects</a></li>
+          </ul>
+      </li>
+      <li <%=contactActiveClass%>>
+        <a href="/contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

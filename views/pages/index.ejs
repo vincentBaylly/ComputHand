@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <%
+    this.date = new Date();
+    this.year = this.date.getFullYear();
+  %>
+  <%- include('../partials/nav', {active:page}); %>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <%if (page==='contact'){%>
+        <h2 align="center">Contactez nous!</h>
+      <%}else if (page==='skills'){%>
+        <a type="button" class="btn btn-lg btn-primary" href="https://drive.google.com/file/d/1lnAsl-jiyKd9qbOaixtzKV7pD2197kB3/view?usp=sharing" target="_blank"><span class="glyphicon glyphicon-download"></span> My Resume, Here</a>
+        <h1 class="skills">Programmer</h1>
+        <h2 class="skills">Specialized in Web - Java/J2EE - Angular</h2>
+      <%}else if (page==='license'){%>
+        <h2 align="center">CONDITIONS GÉNÉRALES D'UTILISATION DU SITE</h1>
+        <h3 align="center">Computhand</h2>
+      <%}else{%>
+        <a href="/" class="logo">
+          <img src="/images/computhand.png">
+        </a>
+      <%}%>
+    </div>
+  </div>
+  <% let pageContent='../partials/' + page + '-content.ejs' %>
+  <%- include(pageContent); %>
+  <% include ../partials/footer.ejs %>
+</body>
+
+</html>

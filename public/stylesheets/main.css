@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background: #000000;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.jumbotron .btn-primary {
+  background: #b3b3b3;
+  border-color: #cc3300;
+}
+
+.jumbotron .btn-primary:hover {
+  background: #ffffff;
+}
+
+.jumbotron p {
+  color: #d9ccee;
+  max-width: 75%;
+  margin: 1em auto 2em;
+}
+
+.navbar+.jumbotron {
+  margin-top: -20px;
+}
+
+.jumbotron .logo {
+  display: block;
+  background: #8A0808;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid white;
+}
+
+.jumbotron .logo img {
+  max-width: 100%;
+  margin-top: 30%;
+}
+
+.jumbotron h1.skills {
+  font-size: 52px;
+  text-align: left;
+}
+
+.jumbotron h2.skills {
+  text-align: left;
+}
+
+.navbar-inverse {
+  background: #000000;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #808080;
+}
+
+a .btn-primary {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+a:hover .btn-primary {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container.content {
+  min-height: 350px;
+}
+
+.container a:link, .container a:visited, .container a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #00000;
+  text-decoration: none;
+}
+
+.contact-input {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 10%;
+}
+
+.contact-textarea {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 10%;
+}
+
+.btn-lg.round {
+	border-radius: 24px;
+  background: #b3b3b3;
+  border-color: #cc3300;
+}
+
+.page-footer {
+  padding: 60px 60px;
+  bottom: 0;
+  width: 100%;
+}
+
+.page-footer a,
+.page-footer a:link,
+.page-footer a:visited,
+.page-footer a:hover,
+.page-footer a:active {
+  color: rgba(255, 255, 255, .6);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.page-footer a:hover {
+  color: rgba(255, 255, 255, .12);
+  border-color: rgba(255, 255, 255, .15);
+  cursor: pointer;
+}
+
+.page-footer {
+  color: rgba(255, 255, 255, .4);
+  background: #26262a;
+}

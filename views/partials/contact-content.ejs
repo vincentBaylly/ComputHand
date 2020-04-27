@@ -1,0 +1,25 @@
+  <div class="row">
+    <div class="col md-12 text-center">
+      <!-- <h3 *ngIf="showSuccessMessage">Thanks for your message!</h3> -->
+      <!-- form goes here -->
+      <form class="contact-form" (ngSubmit)="processForm()">
+        <!-- name -->
+        <div class="field">
+            <input type="text" name="name" class="contact-input" placeholder="Your Name" required minlength="3">
+        </div>
+        <br/>
+        <!-- email -->
+        <div class="field">
+          <input type="email" name="email" class="contact-input" placeholder="Your Email" required email>
+        </div>
+        <br/>
+        <!-- message -->
+        <div class="field">
+          <textarea class="contact-textarea" name="message" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-lg round btn-primary">Submit</button>
+      </form>
+      <br/>
+    </div>
+  </div>
