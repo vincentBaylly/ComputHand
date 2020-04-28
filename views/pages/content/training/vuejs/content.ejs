@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../partials/header.ejs %>
+</head>
+
+<body>
+    <%
+        this.date = new Date();
+        this.year = this.date.getFullYear();
+      %>
+    <%- include('../../../partials/nav', {active:'home'}); %>
+    <div class="container content">
+        <h1><strong>Vue.JS</strong></h1>
+        <p>Faire une introduction a la formation!!</p>
+        <h2><strong>Installation de Vue.js</strong></h2>
+        <h3><strong>Architecture et fonctionnalit&eacute;s:</strong></h3>
+        <p>Temps</p>
+        <p>35 minutes</p>
+        <p>Over the last 10 years the web page have became more dynamic and powerful thanks javascript. We move a lot of
+            code
+            that was normally on the server side into our browser leaving us with thousands of lines of javascript code
+            connecting the various html and css files without formal organisation. This is why more and more developper
+            use
+            framework like Angular, React or Vue.</p>
+        <h4><strong>Presentation De VueJS:</strong></h4>
+        <p>VueJS est un framework (infrastructure logicielle, base de code javascript existant)</p>
+        <p>Definition de <a href="http://Vue.org"><u>Vue.org</u></a>:</p>
+        <p><strong>(framework &eacute;volutif/Progressif framework on peut mettre une partie d&rsquo;une application en
+                VueJS seulement)</strong></p>
+        <p>Vue (prononc&eacute; /vjuː/, comme le terme anglais <strong>view</strong>) est un
+            <strong>framework &eacute;volutif</strong>&nbsp;pour construire des interfaces utilisateur.
+            &Agrave; la diff&eacute;rence des autres frameworks monolithiques, Vue a &eacute;t&eacute; con&ccedil;u et
+            pens&eacute; pour pouvoir &ecirc;tre adopt&eacute; de mani&egrave;re incr&eacute;mentale. Le c&oelig;ur de
+            la
+            biblioth&egrave;que est concentr&eacute; uniquement sur la partie vue, et il est vraiment simple de
+            l&rsquo;int&eacute;grer avec d&rsquo;autres biblioth&egrave;ques ou projets existants. D&rsquo;un autre
+            c&ocirc;t&eacute;, Vue est tout &agrave; fait capable de faire tourner des applications web monopages quand
+            il est
+            coupl&eacute; avec<a href="https://fr.vuejs.org/v2/guide/single-file-components.html"><u>&nbsp;des outils
+                    modernes</u></a>&nbsp;et<a href="#components--libraries"><u>&nbsp;des biblioth&egrave;ques
+                    compl&eacute;mentaires</u></a>.</p>
+        <p>Vue is an :<br /><strong>Approachable</strong></p>
+        <p><strong>Versatile</strong></p>
+        <p><strong>Performant</strong></p>
+        <p>Javascript framework that help you to create a more:</p>
+        <p><strong>Maintainable</strong></p>
+        <p><strong>Testable</strong></p>
+        <p>Code base</p>
+        <h3><strong>les outils </strong></h3>
+        <p>Temps</p>
+        <p>35 minutes</p>
+        <p>Visual Studio code</p>
+        <p><strong>Gestionnaire de version:</strong></p>
+        <p>Un <strong>logiciel de gestion de </strong><a
+                href="https://fr.wikipedia.org/wiki/Version_d'un_logiciel"><u>versions</u></a>&nbsp;(ou
+            <strong>VCS</strong>&nbsp;en <a href="https://fr.wikipedia.org/wiki/Anglais"><u>anglais</u></a>,
+            pour <em><em>version control system</em></em>) est un <a
+                href="https://fr.wikipedia.org/wiki/Logiciel"><u>logiciel</u></a>&nbsp;qui permet de stocker un ensemble
+            de <a href="https://fr.wikipedia.org/wiki/Fichier_(informatique)"><u>fichiers</u></a>&nbsp;en conservant la
+            chronologie de toutes les modifications qui ont &eacute;t&eacute; effectu&eacute;es dessus. Il permet
+            notamment de
+            retrouver les diff&eacute;rentes <a
+                href="https://fr.wikipedia.org/w/index.php?title=Version_de_fichier&amp;action=edit&amp;redlink=1"><u>versions</u></a>&nbsp;d'un
+            lot de fichiers connexes.</p>
+        <p>Il existe aussi des logiciels et services de gestion de versions d&eacute;centralis&eacute;
+            (distribu&eacute;) (ou
+            DVCS en anglais, pour <em><em>distributed version control system</em></em>). <a
+                href="https://fr.wikipedia.org/wiki/Git"><u>Git</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/Mercurial"><u>Mercurial</u></a><a
+                href="#cite_note-1"><u><sup>1</sup></u></a>&nbsp;sont deux exemples de logiciels de gestion de versions
+            d&eacute;centralis&eacute;s et sont disponibles sur la plupart des syst&egrave;mes <a
+                href="https://fr.wikipedia.org/wiki/Unix"><u>Unix</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/Windows"><u>Windows</u></a>.</p>
+        <p>Les <em><em>logiciels de gestion de versions</em></em>&nbsp;sont utilis&eacute;s notamment en <a
+                href="https://fr.wikipedia.org/wiki/D%C3%A9veloppement_logiciel"><u>d&eacute;veloppement
+                    logiciel</u></a>&nbsp;pour conserver le <a href="https://fr.wikipedia.org/wiki/Code_source"><u>code
+                    source</u></a>&nbsp;relatif aux diff&eacute;rentes <a
+                href="https://fr.wikipedia.org/wiki/Version_d'un_logiciel"><u>versions d'un logiciel</u></a>.</p>
+        <p><strong>Git:</strong></p>
+        <p>Git is a <a href="https://git-scm.com/about/free-and-open-source"><u>free and open
+                    source</u></a>&nbsp;distributed
+            version control system designed to handle everything from small to very large projects with speed and
+            efficiency.
+        </p>
+        <p>Git is <a href="https://git-scm.com/doc"><u>easy to learn</u></a>&nbsp;and has a <a
+                href="https://git-scm.com/about/small-and-fast"><u>tiny footprint with lightning fast
+                    performance</u></a>. It
+            outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like <a
+                href="https://git-scm.com/about/branching-and-merging"><u>cheap local branching</u></a>, convenient <a
+                href="https://git-scm.com/about/staging-area"><u>staging areas</u></a>, and <a
+                href="https://git-scm.com/about/distributed"><u>multiple workflows</u></a>.</p>
+        <p><strong>Platforne de gestion de code Git:</strong></p>
+        <p>Il existe plusieurs plateforme de gestion de git avec chacune leurs specificite et leurs fonctionnalites.
+            Mais elles
+            ont tout comme role principale d&rsquo;offrir un serveur git afin de pouvoir gerer les versions du code
+            applicatif.
+        </p>
+        <p>En voici un liste non exhaustive: GitLab, GitHub, BitBucket&hellip;</p>
+        <p><strong>Les paquets (package.json)</strong></p>
+        <p><strong>Node.js</strong></p>
+    </div>
+    <% include ../../../partials/footer.ejs %>
+</body>

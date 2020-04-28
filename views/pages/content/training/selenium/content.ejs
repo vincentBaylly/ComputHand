@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../partials/header.ejs %>
+</head>
+
+<body>
+    <%
+        this.date = new Date();
+        this.year = this.date.getFullYear();
+      %>
+    <%- include('../../../partials/nav', {active:'home'}); %>
+    <div class="container content">
+        <p>Faire la formation!!</p>
+        https://www.udemy.com/course/automateseleniumusingjava/
+        https://www.udemy.com/course/automate-tests-using-selenium-webdriver-with-java-cucumber/
+    </div>
+    <% include ../../../partials/footer.ejs %>
+</body>
