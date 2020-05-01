@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../partials/header.ejs %>
+</head>
+
+<body>
+    <%
+        this.date = new Date();
+        this.year = this.date.getFullYear();
+      %>
+    <%- include('../../../partials/nav', {active:'home'}); %>
+    <div class="container content">
+        <p>Faire une introduction a la formation!!</p>
+        <p>Ajouter les sources la fin (Wikipedia, SupInfo, <a href="http://mkyong.com"><u>mkyong.com</u></a>, <a
+                href="http://www.jmdoudoux.fr"><u>jmdoudoux.fr</u></a>)</p>
+        <p><a
+                href="https://www.supinfo.com/articles/single/6628-architecture-applications-java-ee"><u>https://www.supinfo.com/articles/single/6628-architecture-applications-java-ee</u></a>
+        </p>
+        <p><a
+                href="https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee"><u>https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee</u></a>
+        </p>
+        <h1><strong>Introduction au Java EE(J2EE)</strong></h1>
+        <h2><strong>Historique</strong></h2>
+        <h3><strong>Le language:</strong></h3>
+        <p><strong>Java</strong>&nbsp;est un<a
+                href="https://fr.wikipedia.org/wiki/Langage_de_programmation"><u>&nbsp;langage de
+                    programmation</u></a><a
+                href="https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet"><u>&nbsp;orient&eacute;
+                    objet</u></a>&nbsp;cr&eacute;&eacute; par<a
+                href="https://fr.wikipedia.org/wiki/James_Gosling"><u>&nbsp;James Gosling</u></a>&nbsp;et<a
+                href="https://fr.wikipedia.org/wiki/Patrick_Naughton"><u>&nbsp;Patrick Naughton</u></a>, employ&eacute;s
+            de<a href="https://fr.wikipedia.org/wiki/Sun_Microsystems"><u>&nbsp;Sun Microsystems</u></a>, avec le
+            soutien
+            de<a href="https://fr.wikipedia.org/wiki/Bill_Joy"><u>&nbsp;Bill Joy</u></a>&nbsp;(cofondateur de<a
+                href="https://fr.wikipedia.org/wiki/Sun_Microsystems"><u>&nbsp;Sun Microsystems</u></a>&nbsp;en<a
+                href="https://fr.wikipedia.org/wiki/1982"><u>&nbsp;1982</u></a>), pr&eacute;sent&eacute; officiellement
+            le<a href="https://fr.wikipedia.org/wiki/23_mai"><u>&nbsp;23</u></a><a
+                href="https://fr.wikipedia.org/wiki/Mai_1995"><u>&nbsp;mai</u></a><a
+                href="https://fr.wikipedia.org/wiki/1995_en_informatique"><u>&nbsp;1995</u></a>&nbsp;au
+            <em>SunWorld</em>.</p>
+        <p>La soci&eacute;t&eacute; Sun a &eacute;t&eacute; ensuite rachet&eacute;e en 2009 par la
+            soci&eacute;t&eacute;<a
+                href="https://fr.wikipedia.org/wiki/Oracle_(entreprise)"><u>&nbsp;Oracle</u></a>&nbsp;qui d&eacute;tient
+            et
+            maintient d&eacute;sormais<a href="https://fr.wikipedia.org/wiki/Java_(technique)"><u>&nbsp;Java</u></a>.
+        </p>
+        <p>Une particularit&eacute; de Java est que les logiciels &eacute;crits dans ce langage sont compil&eacute;s
+            vers
+            une repr&eacute;sentation binaire interm&eacute;diaire qui peut &ecirc;tre ex&eacute;cut&eacute;e dans une
+            machine virtuelle Java (JVM) en faisant abstraction du<a
+                href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_d'exploitation"><u>&nbsp;syst&egrave;me
+                    d'exploitation</u></a>.</p>
+        <p>Le langage Java reprend en grande partie la syntaxe du langage<a
+                href="https://fr.wikipedia.org/wiki/C++"><u>&nbsp;C++</u></a>. N&eacute;anmoins, Java a
+            &eacute;t&eacute;
+            &eacute;pur&eacute; des concepts les plus subtils du<a
+                href="https://fr.wikipedia.org/wiki/C++"><u>&nbsp;C++</u></a>&nbsp;et &agrave; la fois les plus
+            d&eacute;routants, tels que les pointeurs et r&eacute;f&eacute;rences, ou l&rsquo;<a
+                href="https://fr.wikipedia.org/wiki/H%C3%A9ritage_multiple"><u>h&eacute;ritage
+                    multiple</u></a>&nbsp;contourn&eacute; par l&rsquo;impl&eacute;mentation des<a
+                href="https://fr.wikipedia.org/wiki/Interface_(programmation_orient%C3%A9e_objet)"><u>&nbsp;interfaces</u></a>,
+            et m&ecirc;me depuis la version 8, l'arriv&eacute;e des interfaces fonctionnelles introduit
+            l'h&eacute;ritage
+            multiple (sans la gestion des attributs) avec ses avantages et inconv&eacute;nients tels que
+            l'h&eacute;ritage
+            en diamant. Les concepteurs ont privil&eacute;gi&eacute; l&rsquo;<a
+                href="https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet"><u>approche orient&eacute;e
+                    objet</u></a>&nbsp;de sorte qu&rsquo;en Java, tout est objet &agrave; l&rsquo;exception des<a
+                href="https://fr.wikipedia.org/wiki/Type_(informatique)"><u>&nbsp;types</u></a>&nbsp;primitifs (nombres
+            entiers, nombres &agrave; virgule flottante, etc.) qui ont cependant leurs variantes qui h&eacute;ritent de
+            l'objet Object (Integer, Float, ...).&nbsp;</p>
+        <h3><strong>Les Versions:</strong></h3>
+        <h2><strong>Java SE</strong></h2>
+        <p>Le terme &laquo; Java &raquo; fait bien &eacute;videmment r&eacute;f&eacute;rence &agrave; un langage, mais
+            &eacute;galement &agrave; une plate-forme : son nom complet est &laquo; Java SE &raquo; pour <em>Java
+                Standard Edition</em>, et &eacute;tait anciennement raccourci &laquo; J2SE &raquo;. Celle-ci est
+            constitu&eacute;e de nombreuses biblioth&egrave;ques, ou API : citons par exemple java.lang, java.io,
+            java.math,
+            java.util, etc. Toutes ces biblioth&egrave;ques contiennent un nombre cons&eacute;quent de classes et leurs
+            m&eacute;thodes utilisables offrant des algorithmes devenus des standards du code. Voir <a
+                href="https://jcp.org"><u>https://jcp.org</u></a>&nbsp;et JSR</p>
+        <p>NE PAS CONFONDRE avec JavaScript langage interpr&eacute;t&eacute; c&ocirc;te navigateur internet.</p>
+        <h2><strong>Java EE</strong></h2>
+        <p>Le terme &laquo; Java EE &raquo; signifie <em>Java Enterprise Edition</em>, et &eacute;tait anciennement
+            raccourci en &laquo; J2EE &raquo;. Il fait quant &agrave; lui r&eacute;f&eacute;rence &agrave; une extension
+            de
+            la plate-forme standard. Autrement dit, la plate-forme Java EE est construite sur le langage Java et la
+            plate-forme Java SE, et elle y ajoute un grand nombre de biblioth&egrave;ques remplissant tout un tas de
+            fonctionnalit&eacute;s que la plate-forme standard ne remplit pas d'origine. L'objectif majeur de Java EE
+            est de
+            faciliter le d&eacute;veloppement d'applications web robustes et distribu&eacute;es, d&eacute;ploy&eacute;es
+            et
+            ex&eacute;cut&eacute;es sur un serveur d'applications.</p>
+        <p><a href="https://jcp.org/en/jsr/detail?id=316"><u>https://jcp.org/en/jsr/detail?id=316</u></a></p>
+        <p>Java 13:</p>
+        <p><a
+                href="https://mkyong.com/java/what-is-new-in-java-13/"><u>https://mkyong.com/java/what-is-new-in-java-13/</u></a>
+        </p>
+        <h2><strong>Outils et environnement de d&eacute;veloppement</strong></h2>
+        <p><strong>JRE:</strong></p>
+        <p>L'<strong>environnement d'ex&eacute;cution Java</strong>&nbsp;(abr.
+            <strong>JRE</strong>&nbsp;pour <em>Java Runtime Environment</em>), parfois
+            nomm&eacute; simplement &laquo;&nbsp;Java&nbsp;&raquo;, est une famille de <a
+                href="https://fr.wikipedia.org/wiki/Logiciel"><u>logiciels</u></a>&nbsp;qui permet l'ex&eacute;cution
+            des
+            programmes &eacute;crits en <a href="https://fr.wikipedia.org/wiki/Langage_de_programmation"><u>langage de
+                    programmation</u></a>&nbsp;<a href="https://fr.wikipedia.org/wiki/Java_(langage)"><u>Java</u></a>,
+            sur
+            diff&eacute;rentes <a href="https://fr.wikipedia.org/wiki/Plate-forme_(informatique)"><u>plateformes
+                    informatiques</u></a>.<br />Il est distribu&eacute; gratuitement par <a
+                href="https://fr.wikipedia.org/wiki/Oracle_Corporation"><u>Oracle Corporation</u></a>, sous forme de
+            diff&eacute;rentes <a
+                href="https://fr.wikipedia.org/wiki/Version_d'un_logiciel"><u>versions</u></a>&nbsp;destin&eacute;es aux
+            <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_d'exploitation"><u>syst&egrave;mes
+                    d'exploitation</u></a>&nbsp;<a href="https://fr.wikipedia.org/wiki/Windows"><u>Windows</u></a>, <a
+                href="https://fr.wikipedia.org/wiki/Mac_OS_X"><u>Mac OS X</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/Linux"><u>Linux</u></a>, toutes conformes aux <a
+                href="https://fr.wikipedia.org/wiki/Java_Specification_Requests"><u>Java Specification
+                    Requests</u></a>&nbsp;(JSR).</p>
+        <p><em>JRE</em>&nbsp;est souvent consid&eacute;r&eacute; comme une <a
+                href="https://fr.wikipedia.org/wiki/Plate-forme_(informatique)"><u>plateforme
+                    informatique</u></a>&nbsp;au
+            m&ecirc;me titre qu'un <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_d'exploitation"><u>syst&egrave;me
+                    d'exploitation</u></a>&nbsp;(OS). En effet, s'il n'est pas un OS, il offre les m&ecirc;mes
+            fonctionnalit&eacute;s par l'interm&eacute;diaire de ses biblioth&egrave;ques et permet ainsi
+            l'ex&eacute;cution
+            des programmes &eacute;crits en langage Java sur de nombreux types d'appareils &mdash; ordinateurs
+            personnels,
+            <a href="https://fr.wikipedia.org/wiki/Ordinateur_central"><u>mainframes</u></a>, t&eacute;l&eacute;phones
+            mobiles &mdash; en faisant abstraction des caract&eacute;ristiques techniques de la plateforme informatique
+            sous-jacente qui ex&eacute;cute le JRE.</p>
+        <p><em>JRE</em>&nbsp;est un logiciel populaire, install&eacute; sur plus de 900 millions d'ordinateurs.</p>
+        <p><strong>JDK:</strong></p>
+        <p>Le <strong>Java Development Kit</strong>&nbsp;(<strong>JDK</strong>)
+            d&eacute;signe un ensemble de <a
+                href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle"><u>biblioth&egrave;ques
+                    logicielles</u></a>&nbsp;de base du <a
+                href="https://fr.wikipedia.org/wiki/Langage_de_programmation"><u>langage de
+                    programmation</u></a>&nbsp;<a href="https://fr.wikipedia.org/wiki/Java_(langage)"><u>Java</u></a>,
+            ainsi que les outils avec lesquels le
+            code Java peut &ecirc;tre compil&eacute;, transform&eacute; en <a
+                href="https://fr.wikipedia.org/wiki/Bytecode"><u>bytecode</u></a>&nbsp;destin&eacute; &agrave; la <a
+                href="https://fr.wikipedia.org/wiki/Machine_virtuelle_Java"><u>machine virtuelle Java</u></a>.</p>
+        <p>Il existe plusieurs &eacute;ditions de JDK, selon la <a
+                href="https://fr.wikipedia.org/wiki/Plate-forme_Java"><u>plate-forme
+                    Java</u></a>&nbsp;consid&eacute;r&eacute;e (et bien &eacute;videmment la version de Java
+            cibl&eacute;e)&nbsp;:</p>
+        <p>JSE pour la <a href="https://fr.wikipedia.org/wiki/Java_2_Standard_Edition"><u>Java 2 Standard
+                    Edition</u></a>&nbsp;&eacute;galement d&eacute;sign&eacute;e J2SE&nbsp;;</p>
+        <p><a href="https://fr.wikipedia.org/wiki/Java_EE"><u>JEE</u></a>, sigle de Java Enterprise Edition
+            &eacute;galement
+            d&eacute;sign&eacute;e J2EE&nbsp;;</p>
+        <p>JME 'Micro Edition', destin&eacute;e au march&eacute; <a
+                href="https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9phonie_mobile"><u>mobiles</u></a>&nbsp;;</p>
+        <p>etc.</p>
+        <p>&Agrave; chacune de ces plateformes correspond une base commune de Development Kits, plus des
+            biblioth&egrave;ques additionnelles sp&eacute;cifiques selon la plate-forme Java que le JDK cible, mais le
+            terme
+            de JDK est appliqu&eacute; indistinctement &agrave; n'importe laquelle de ces plates-formes.</p>
+        <p><strong>Gestionnaire de version:</strong></p>
+        <p>Un <strong>logiciel de gestion de </strong><a
+                href="https://fr.wikipedia.org/wiki/Version_d'un_logiciel"><u>versions</u></a>&nbsp;(ou
+            <strong>VCS</strong>&nbsp;en <a href="https://fr.wikipedia.org/wiki/Anglais"><u>anglais</u></a>, pour
+            <em>version control
+                system</em>) est un <a href="https://fr.wikipedia.org/wiki/Logiciel"><u>logiciel</u></a>&nbsp;qui
+            permet de stocker un ensemble de <a
+                href="https://fr.wikipedia.org/wiki/Fichier_(informatique)"><u>fichiers</u></a>&nbsp;en conservant la
+            chronologie de toutes les modifications qui ont &eacute;t&eacute; effectu&eacute;es dessus. Il permet
+            notamment
+            de retrouver les diff&eacute;rentes <a
+                href="https://fr.wikipedia.org/w/index.php?title=Version_de_fichier&amp;action=edit&amp;redlink=1"><u>versions</u></a>&nbsp;d'un
+            lot de fichiers connexes.</p>
+        <p>Il existe aussi des logiciels et services de gestion de versions d&eacute;centralis&eacute;
+            (distribu&eacute;)
+            (ou DVCS en anglais, pour <em>distributed version control system</em>). <a
+                href="https://fr.wikipedia.org/wiki/Git"><u>Git</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/Mercurial"><u>Mercurial</u></a><a
+                href="#cite_note-1"><u><sup>1</sup></u></a>&nbsp;sont deux exemples de logiciels de gestion de versions
+            d&eacute;centralis&eacute;s et sont disponibles sur la plupart des syst&egrave;mes <a
+                href="https://fr.wikipedia.org/wiki/Unix"><u>Unix</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/Windows"><u>Windows</u></a>.</p>
+        <p>Les <em>logiciels de gestion de versions</em>&nbsp;sont utilis&eacute;s notamment en <a
+                href="https://fr.wikipedia.org/wiki/D%C3%A9veloppement_logiciel"><u>d&eacute;veloppement
+                    logiciel</u></a>&nbsp;pour conserver le <a href="https://fr.wikipedia.org/wiki/Code_source"><u>code
+                    source</u></a>&nbsp;relatif aux diff&eacute;rentes <a
+                href="https://fr.wikipedia.org/wiki/Version_d'un_logiciel"><u>versions d'un logiciel</u></a>.</p>
+        <p><strong>Git:</strong></p>
+        <p>Git is a <a href="https://git-scm.com/about/free-and-open-source"><u>free and open
+                    source</u></a>&nbsp;distributed version control system designed to handle everything from small to
+            very
+            large projects with speed and efficiency.</p>
+        <p>Git is <a href="https://git-scm.com/doc"><u>easy to learn</u></a>&nbsp;and has a <a
+                href="https://git-scm.com/about/small-and-fast"><u>tiny footprint with lightning fast
+                    performance</u></a>.
+            It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like <a
+                href="https://git-scm.com/about/branching-and-merging"><u>cheap local branching</u></a>, convenient <a
+                href="https://git-scm.com/about/staging-area"><u>staging areas</u></a>, and <a
+                href="https://git-scm.com/about/distributed"><u>multiple workflows</u></a>.</p>
+        <p><strong>Platforne de gestion de code Git:</strong></p>
+        <p>Il existe plusieurs plateforme de gestion de git avec chacune leurs specificite et leurs fonctionnalites.
+            Mais
+            elles ont tout comme role principale d&rsquo;offrir un serveur git afin de pouvoir gerer les versions du
+            code
+            applicatif.</p>
+        <p>En voici un liste non exhaustive: GitLab, GitHub, BitBucket&hellip;</p>
+        <p><strong>Maven:</strong></p>
+        <p>Apache Maven is a software project management and comprehension tool. Based on the concept of a project
+            object
+            model (POM), Maven can manage a project's build, reporting and documentation from a central piece of
+            information.</p>
+        <p><strong>NetBeans:</strong></p>
+        <p><strong>NetBeans</strong>&nbsp;est un <a
+                href="https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement_int%C3%A9gr%C3%A9"><u>environnement
+                    de d&eacute;veloppement int&eacute;gr&eacute;</u></a>&nbsp;(EDI), plac&eacute; en <a
+                href="https://fr.wikipedia.org/wiki/Open_source"><u>open source</u></a>&nbsp;par <a
+                href="https://fr.wikipedia.org/wiki/Sun_Microsystems"><u>Sun</u></a>&nbsp;en <a
+                href="https://fr.wikipedia.org/wiki/Juin_2000"><u>juin 2000</u></a>&nbsp;sous licence CDDL (<a
+                href="https://fr.wikipedia.org/wiki/Common_Development_and_Distribution_License"><u>Common Development
+                    and
+                    Distribution License</u></a>) et <a
+                href="https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU"><u>GPLv2</u></a>.</p>
+        <p><strong>WebLogic:</strong></p>
+        <p>Propri&eacute;t&eacute; de <a href="https://fr.wikipedia.org/wiki/Oracle_Corporation"><u>Oracle
+                    Corporation</u></a>, <strong>Oracle WebLogic</strong>&nbsp;consiste en une famille de
+            produits sur la plate-forme <a href="https://fr.wikipedia.org/wiki/Java_EE"><u>Java
+                    EE</u></a>&nbsp;(auparavant
+            J2EE) incluant&nbsp;:</p>
+        <p>un serveur d'applications J2EE, <em>WebLogic Application Server</em></p>
+        <p>un <a href="https://fr.wikipedia.org/wiki/Portail_web"><u>portail</u></a>, <em>WebLogic Portal</em></p>
+        <p>une plate-forme <a href="https://fr.wikipedia.org/wiki/Enterprise_application_integration"><u>Enterprise
+                    Application integration</u></a></p>
+        <p>un serveur transactionnel, <a href="https://fr.wikipedia.org/wiki/Tuxedo_(logiciel)"><u>WebLogic
+                    Tuxedo</u></a>
+        </p>
+        <p>une plate-forme de t&eacute;l&eacute;communications, <em>WebLogic Communication Platform</em></p>
+        <p>un <a href="https://fr.wikipedia.org/wiki/Serveur_web"><u>serveur web</u></a>&nbsp;<a
+                href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol"><u>HTTP</u></a></p>
+        <p>Oracle WebLogic Server est le premier serveur d&rsquo;applications de plateforme Java d&rsquo;entreprise
+            natif
+            Cloud au monde pour le d&eacute;veloppement et le d&eacute;ploiement d&rsquo;applications d&rsquo;entreprise
+            distribu&eacute;es &agrave; plusieurs niveaux. Oracle WebLogic Server centralise les services
+            d&rsquo;application tels que la fonctionnalit&eacute; de serveur Web, les composants m&eacute;tier et
+            l&rsquo;acc&egrave;s aux syst&egrave;mes d&rsquo;entreprise back-end.</p>
+        <h2><strong>Mise en place des outils</strong></h2>
+        <p><strong>Eclipse</strong></p>
+        <p>Eclipse is an<a href="https://en.wikipedia.org/wiki/Integrated_development_environment"><u>&nbsp;integrated
+                    development environment</u></a>&nbsp;(IDE) used in<a
+                href="https://en.wikipedia.org/wiki/Computer_programming"><u>&nbsp;computer programming</u></a>.<a
+                href="#cite_note-6"><u><sup>[6]</sup></u></a>&nbsp;It contains a base<a
+                href="https://en.wikipedia.org/wiki/Workspace"><u>&nbsp;workspace</u></a>&nbsp;and an extensible<a
+                href="https://en.wikipedia.org/wiki/Plug-in_(computing)"><u>&nbsp;plug-in</u></a>&nbsp;system for
+            customizing the environment.&nbsp;</p>
+        <p><a href="https://www.eclipse.org/eclipseide/"><u>https://www.eclipse.org/eclipseide/</u></a></p>
+        <p><strong>Tomcat</strong></p>
+        <p>The Apache Tomcat<sup>&reg;</sup>&nbsp;software is an open source implementation of the Java Servlet,
+            JavaServer
+            Pages, Java Expression Language and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java
+            Expression Language and Java WebSocket specifications are developed under the<a
+                href="http://jcp.org/en/introduction/overview"><u>&nbsp;Java Community Process</u></a>.&nbsp;</p>
+        <p><a href="https://tomcat.apache.org/"><u>https://tomcat.apache.org/</u></a></p>
+        <p><strong>Oracle Database 19c</strong></p>
+        <p>Oracle Database 19c, is the long term support release of the Oracle Database 12c and 18c family of products,
+            offering customers Premier and Extended Support through to March 2023 and March 2026 respectively. It is
+            available on Linux, Windows, Solaris, HP/UX and AIX platforms as well as the Oracle Cloud. Oracle Database
+            19c
+            offers customers the best performance, scalability, reliability and security for all their operational and
+            analytical workloads.</p>
+        <p><a
+                href="https://www.oracle.com/database/technologies/"><u>https://www.oracle.com/database/technologies/</u></a>
+        </p>
+        <h2><strong>Design pattern MVC</strong></h2>
+        <h3><strong>Design Pattern:</strong></h3>
+        <p><a
+                href="https://jormes.developpez.com/articles/design-pattern-construction/"><u>https://jormes.developpez.com/articles/design-pattern-construction/</u></a>
+        </p>
+        <p>En<a href="https://fr.wikipedia.org/wiki/Informatique"><u>&nbsp;informatique</u></a>, et plus
+            particuli&egrave;rement en<a
+                href="https://fr.wikipedia.org/wiki/D%C3%A9veloppement_logiciel"><u>&nbsp;d&eacute;veloppement
+                    logiciel</u></a>, un patron de conception (souvent appel&eacute; <em>design pattern</em>) est
+            un arrangement caract&eacute;ristique de modules, reconnu comme bonne pratique en r&eacute;ponse &agrave; un
+            probl&egrave;me de conception d'un logiciel. Il d&eacute;crit une solution standard, utilisable dans la
+            conception de diff&eacute;rents logiciels.</p>
+        <p>Un patron de conception est issu de l'exp&eacute;rience des concepteurs de logiciels Il d&eacute;crit un
+            arrangement r&eacute;current de r&ocirc;les et d'actions jou&eacute;s par des modules d'un logiciel, et le
+            nom
+            du patron sert de vocabulaire commun entre le concepteur et le programmeur. D'une mani&egrave;re analogue
+            &agrave; un<a href="https://fr.wikipedia.org/wiki/Christopher_Alexander"><u>&nbsp;motif de conception en
+                    architecture</u></a>, le patron de conception d&eacute;crit les grandes lignes d'une solution, qui
+            peuvent ensuite &ecirc;tre modifi&eacute;es et adapt&eacute;es en fonction des besoins.</p>
+        <p>Les patrons de conception d&eacute;crivent des proc&eacute;d&eacute;s de conception g&eacute;n&eacute;raux et
+            permettent en cons&eacute;quence de<a
+                href="https://fr.wikipedia.org/wiki/Capitalisation_des_connaissances"><u>&nbsp;capitaliser</u></a>&nbsp;l'exp&eacute;rience
+            appliqu&eacute;e &agrave; la<a
+                href="https://fr.wikipedia.org/wiki/Conception_de_logiciel"><u>&nbsp;conception
+                    de logiciel</u></a>. Ils ont une influence sur l'<a
+                href="https://fr.wikipedia.org/wiki/Architecture_logicielle"><u>architecture
+                    logicielle</u></a>&nbsp;d'un<a
+                href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_informatique"><u>&nbsp;syst&egrave;me
+                    informatique</u></a>.
+        </p>
+        <h3><strong>MVC:</strong></h3>
+        <p>La plupart des plateformes de d&eacute;veloppement des applications web y compris Java EE n&rsquo;imposent
+            aucun
+            agencement particulier du code. Ceci resulte en une infrastruture difficile a lire, a maintenir et a faire
+            evoluer. Suite a de nombreuse creation d&rsquo;application, un concensus a ete etablie pour etablie les
+            bonnes
+            pratiques, on utilise pour cela les <strong>Patrons de conception</strong>&nbsp;ou
+            <strong>Design Pattern</strong>. Le mod&egrave;le MVC organise le code de facon a separer les
+            differentes responsabilites. MVC signifie Mod&egrave;le &ndash; Vue &ndash; Contr&ocirc;leur, cela se resume
+            par
+            la segmentation du code en trois parties ou couches, chaque couche ayant une fonction pr&eacute;cise.</p>
+        <h4><strong>Couche Vue:</strong></h4>
+        <p>Pr&eacute;sentation des donn&eacute;es &agrave; l&rsquo;utilisateur, elle retourne une vue des donn&eacute;es
+            venant du mod&egrave;le, en d&rsquo;autres termes c&rsquo;est elle qui est responsable de produire les
+            interfaces de pr&eacute;sentation de l'application &agrave; partir des informations qu&rsquo;elle dispose
+            (page
+            HTML par exemple). Cependant, elle n&rsquo;est pas seulement limit&eacute;e au HTML ou &agrave; la
+            repr&eacute;sentation en texte des donn&eacute;es, elle peut aussi &ecirc;tre utilis&eacute;e pour offrir
+            une
+            grande vari&eacute;t&eacute; de formats en fonction de des besoins et de la plateforme sur laquelle les
+            donnees
+            s&rsquo;afficheront.</p>
+        <h4><strong>Couche Contr&ocirc;leur:</strong></h4>
+        <p>Couche charg&eacute;e de diriger les informations, elle va d&eacute;cider qui va r&eacute;cup&eacute;rer
+            l&rsquo;information et la traiter. Elle g&egrave;re les requ&ecirc;tes des utilisateurs et retourne une
+            r&eacute;ponse avec l&rsquo;aide de la couche Mod&egrave;le et Vue.</p>
+        <h4><strong>Couche Mod&egrave;le</strong></h4>
+        <p>Logique m&eacute;tier de l'application. Ceci signifie qu&rsquo;elle est responsable de
+            r&eacute;cup&eacute;rer
+            les donn&eacute;es, de les convertir selon les concepts de la logique de l'application tels que le
+            traitement,
+            la validation, l&rsquo;association et tout autre t&acirc;che concernant la manipulation des donn&eacute;es.
+            Elle
+            est &eacute;galement responsable de l&rsquo;interaction avec la base de donn&eacute;es, elle sait en quelque
+            sorte comment se connecter &agrave; une base de donn&eacute;es et d&rsquo;ex&eacute;cuter les requ&ecirc;tes
+            (CREATE, READ, UPDATE, DELETE) sur une base de donn&eacute;es. Aujourd&rsquo;hui les architectures dites
+            N-Tiers
+            divisent la gestion logique et la sauvegarde des donnees de la gestion de l&rsquo;interfacage. On utilisera
+            plus
+            souvent maintenant des appels a un API ou a des webservices dans cette couche.</p>
+        <p><a
+                href="https://www.supinfo.com/articles/single/6628-architecture-applications-java-ee"><u>https://www.supinfo.com/articles/single/6628-architecture-applications-java-ee</u></a>
+        </p>
+        <h3><strong>MVC in J2EE:</strong></h3>
+        <h2><strong>Notion de requetes, protocle et Fonctionnement</strong></h2>
+        <h3><strong>Protocole HTTP (en t&ecirc;tes, gestion de l&rsquo;&eacute;tat, pile TCP/IP)</strong>
+        </h3>
+        <p><a
+                href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol"><u>https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol</u></a>
+        </p>
+        <p><a
+                href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol"><u>https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol</u></a>
+        </p>
+        <h3><strong>Protocole HTTPS</strong></h3>
+        <p>HTTPS (Hypertext Transfer Protocol Secure ou protocole de transfert hypertexte s&eacute;curis&eacute;) est un
+            protocole de communication Internet qui prot&egrave;ge l'int&eacute;grit&eacute; ainsi que la
+            confidentialit&eacute; des donn&eacute;es lors du transfert d'informations entre l'ordinateur de
+            l'internaute et
+            le site. Les internautes s'attendent &agrave; b&eacute;n&eacute;ficier d'une exp&eacute;rience en ligne
+            s&eacute;curis&eacute;e et confidentielle lorsqu'ils consultent un site Web.&nbsp;</p>
+        <p>Les donn&eacute;es envoy&eacute;es &agrave; l'aide du protocole HTTPS sont s&eacute;curis&eacute;es via le
+            protocole <em>Transport Layer Security</em>&nbsp;(<a
+                href="https://fr.wikipedia.org/wiki/Transport_Layer_Security"><u>TLS</u></a>), qui offre trois niveaux
+            cl&eacute;s de protection :</p>
+        <p><strong>Transport Layer Security</strong>&nbsp;(<strong>TLS</strong>) ou
+            S&eacute;curit&eacute; de la couche de transport, et son pr&eacute;d&eacute;cesseur <strong>Secure
+                Sockets Layer</strong>&nbsp;(<strong>SSL</strong>), sont des<a
+                href="https://fr.wikipedia.org/wiki/Protocole_de_communication"><u>&nbsp;</u><u>protocoles</u></a>&nbsp;de
+            s&eacute;curisation des &eacute;changes sur<a
+                href="https://fr.wikipedia.org/wiki/Internet"><u>&nbsp;</u><u>Internet</u></a>. Le protocole SSL a
+            &eacute;t&eacute; d&eacute;velopp&eacute; &agrave; l'origine par<a
+                href="https://fr.wikipedia.org/wiki/Netscape_Communications_Corporation"><u>&nbsp;</u><u>Netscape</u></a>.
+            L'<a href="https://fr.wikipedia.org/wiki/Internet_Engineering_Task_Force"><u>IETF</u></a>&nbsp;en a
+            poursuivi le
+            d&eacute;veloppement en le rebaptisant <em>Transport Layer Security</em>&nbsp;(TLS). On parle parfois
+            de SSL/TLS pour d&eacute;signer indiff&eacute;remment SSL ou TLS.&nbsp;</p>
+        <p>Le <strong>chiffrement</strong>&nbsp;: consiste &agrave; coder les donn&eacute;es
+            &eacute;chang&eacute;es pour les prot&eacute;ger des interceptions illicites. Cela signifie que lorsqu'un
+            internaute navigue sur un site Web, personne ne peut "&eacute;couter" ses conversations, suivre ses
+            activit&eacute;s sur diverses pages ni voler ses informations.</p>
+        <p>L'<strong>int&eacute;grit&eacute; des donn&eacute;es</strong>&nbsp;: les informations ne peuvent
+            &ecirc;tre ni modifi&eacute;es, ni corrompues durant leur transfert, que ce soit
+            d&eacute;lib&eacute;r&eacute;ment ou autrement, sans &ecirc;tre d&eacute;tect&eacute;es.</p>
+        <p>L'<strong>authentification</strong>&nbsp;: prouve que les internautes communiquent avec le bon
+            site Web. Cette m&eacute;thode prot&egrave;ge contre les<a
+                href="https://fr.wikipedia.org/wiki/Attaque_de_l'homme_du_milieu"><u>&nbsp;</u><u>attaques des
+                    intercepteurs</u></a>&nbsp;et instaure un climat de confiance pour l'internaute qui se traduit par
+            d'autres retomb&eacute;es pour votre activit&eacute;.</p>
+        <h1><strong>Notion de J2EE</strong></h1>
+        <h2><strong>Concepts de base</strong></h2>
+        <h3><strong>JavaBean</strong></h3>
+        <p>Les Javabeans sont un mod&egrave;le de composants du langage Java. Ce sont des &lsquo;pi&egrave;ces
+            logicielles&rsquo; qui peuvent &ecirc;tre r&eacute;utilis&eacute;es pour cr&eacute;er des programmes dans un
+            environnement visuel de d&eacute;veloppement d&rsquo;applications. Elles repr&eacute;sentent
+            g&eacute;n&eacute;ralement les donn&eacute;es du monde r&eacute;el. Les principaux concepts mis en jeu pour
+            un
+            Bean sont les suivants :</p>
+        <p><strong>Propri&eacute;t&eacute;s :</strong>&nbsp;Un JavaBean doit pourvoir &ecirc;tre
+            param&eacute;trable. Les propri&eacute;t&eacute;s c&rsquo;est-&agrave;-dire les champs non publics
+            pr&eacute;sent dans un bean. Qu&rsquo;elles soient de type primitif ou objets, les propri&eacute;t&eacute;s
+            permettent de param&eacute;trer le bean, en y stockant des donn&eacute;es.</p>
+        <p><strong>La s&eacute;rialisation : </strong>Un bean est construit pour pouvoir &ecirc;tre
+            persistant. La s&eacute;rialisation est un processus qui permet de sauvegarder l&rsquo;&eacute;tat
+            d&rsquo;un
+            bean et donne ainsi la possibilit&eacute; de le restaurer par la suite. Ce m&eacute;canisme permet une
+            persistance de donn&eacute;es voir de l&rsquo;application elle-m&ecirc;me.</p>
+        <p><strong>La r&eacute;utilisation :</strong>&nbsp;Un bean st un composant con&ccedil;u pour
+            &ecirc;tre r&eacute;utilisable. Ne contenant que des donn&eacute;es du code m&eacute;tier, un tel composant
+            n&rsquo;a en effet pas de lien direct avec la couche de pr&eacute;sentation, et peut &eacute;galement
+            &ecirc;tre
+            distant de la couche d&rsquo;acc&egrave;s aux donn&eacute;es. C&rsquo;est cette ind&eacute;pendance qui lui
+            donne ce caract&egrave;re r&eacute;utilisable.</p>
+        <p><strong>L'introspection :</strong>&nbsp;un bean est con&ccedil;u pour &ecirc;tre
+            param&eacute;trable de mani&egrave;re dynamique. L'introspection est un processus qui permet de
+            conna&icirc;tre
+            le contenu d'un composant (attributs, m&eacute;thodes et &eacute;v&eacute;nements) de mani&egrave;re
+            dynamique,
+            sans disposer de son code source. C'est ce processus, coupl&eacute; &agrave; certaines r&egrave;gles de
+            normalisation, qui rend possible une d&eacute;couverte et un param&eacute;trage dynamique du bean.</p>
+        <p>Ainsi tout objet conforme &agrave; ces quelques r&egrave;gles peut &ecirc;tre appel&eacute;s Bean. Il est
+            &eacute;galement important de noter qu&rsquo;un JavaBean n&rsquo;est pas un EJB (Entreprise Java Bean).</p>
+        <p>Un bean doit &eacute;galement avoir la structure suivante :</p>
+        <p>Doit &ecirc;tre une classe publique</p>
+        <p>Doit avoir au moins un constructeur par d&eacute;faut, public et sans param&egrave;tres. Java l'ajoutera de
+            lui-m&ecirc;me si aucun constructeur n'est explicit&eacute; ;</p>
+        <p>Peut impl&eacute;menter l'interface Serializable, il devient ainsi persistant et son &eacute;tat peut
+            &ecirc;tre
+            sauvegard&eacute; ;</p>
+        <p>Ne doit pas avoir de champs publics ;</p>
+        <p>Peut d&eacute;finir des propri&eacute;t&eacute;s (des champs non publics), qui doivent &ecirc;tre accessibles
+            via
+            des m&eacute;thodes publiques getter et setter, suivant des r&egrave;gles de nommage.</p>
+        <h3><strong>Gestion des erreurs</strong></h3>
+        <p>try - catch</p>
+        <p>Creer ces propres exceptions</p>
+        <h2><strong>Transmission de donn&eacute;es entre pages</strong></h2>
+        <h2><strong>Servlet</strong></h2>
+        <h2><strong>API JEE</strong></h2>
+        <p>En introduction nous avons dit que la plateforme JAVA EE sp&eacute;cifiait les infrastructures de gestion de
+            nos
+            applications au travers composants sous forme d&rsquo;API (Application Programming Interface). En effet
+            cette
+            plateforme fournit essentiellement un environnement d&rsquo;ex&eacute;cution et un ensemble de services
+            accessibles via des APIs pour aider &agrave; concevoir nos applications. Ainsi donc, tout serveur JEE va
+            fournir
+            &agrave; nos applications un ensemble de services comme la connexion aux bases de donn&eacute;es, la
+            messagerie,
+            la gestion des transactions et etc. L&rsquo;architecture JEE unifie l&rsquo;acc&egrave;s &agrave; ces
+            services
+            au sein des API de services d&rsquo;entreprise, mais plut&ocirc;t que d&rsquo;avoir acc&egrave;s &agrave;
+            ces
+            services &agrave; travers des interfaces propri&eacute;taires, les applications JEE peuvent acc&eacute;der
+            &agrave; ces API via le serveur.</p>
+        <p>La sp&eacute;cification de la plateforme J2EE pr&eacute;voit un ensemble d'extensions Java standard que
+            chaque
+            plate-forme JEE doit prendre en charge :</p>
+        <p><strong>JNDI :</strong>&nbsp;Java Naming and Directory Interface permet de localiser et
+            d&rsquo;utiliser les ressources. C&rsquo;est une extension JAVA standard qui fournit un API uniforme
+            permettant
+            d&rsquo;acc&eacute;der &agrave; divers services de noms et de r&eacute;pertoires. Derri&egrave;re JNDI il
+            peur
+            avoir un appel &agrave; des services tels que : CORBA, DNS, LDAP, etc.</p>
+        <p><strong>JMS </strong>: Java Message Service est &agrave; la fois une ossature et une API
+            permettant aux d&eacute;veloppeurs de construire des applications professionnelles qui se servent de
+            messages
+            pour transmettre des donn&eacute;es.</p>
+        <p><strong>JTA :</strong>&nbsp;Java Transaction API d&eacute;finit des interfaces standards entre
+            un gestionnaire de transactions et les &eacute;l&eacute;ments impliqu&eacute;s dans celle-ci :
+            l&rsquo;application, le gestionnaire de ressource et le serveur. JSP : Java ServerPage (Encore les JSP)
+            c&rsquo;est une extension de la notion de servlet permettant de simplifier la g&eacute;n&eacute;ration de
+            pages
+            web dynamiques. Elle se sert de balises semblables au XML ainsi que de scriplets Java afin d'incorporer la
+            logique de fabrication directement dans le code HTML.</p>
+        <p><strong>EJB :</strong>&nbsp;Chaque instance d'un EJB se construit dans un conteneur EJB, un
+            environnement d'ex&eacute;cution fournissant des services (S&eacute;curit&eacute;, Communications, Cycle de
+            vie...). Un client n'acc&egrave;de JAMAIS directement &agrave; un composant. Il doit pour cela passer par
+            une
+            interface locale et une interface distance. L'interface locale d&eacute;crit le cycle d'existence du
+            composant
+            en d&eacute;finissant des m&eacute;thodes permettant de le trouver, de le cr&eacute;er, de le
+            d&eacute;truire.
+            Et L'interface distante sp&eacute;cifie les m&eacute;thodes que ce composant pr&eacute;sente au monde
+            ext&eacute;rieur.</p>
+        <p><strong>Authentification :</strong>&nbsp;J2EE fournit des services d'authentification en se
+            basant sur les concepts d'utilisateur, de domaines et de groupes.</p>
+        <h1><strong>D&eacute;velopper une application Web</strong></h1>
+        <h2><strong>Pr&eacute;sentation des JSP</strong></h2>
+        <h3><strong>Definition d&rsquo;une JSP</strong></h3>
+        <p>Une page JSP est destin&eacute;e &agrave; la vue (pr&eacute;sentation des donn&eacute;es). Elle est
+            ex&eacute;cut&eacute;e c&ocirc;t&eacute; serveur et permet l&rsquo;&eacute;criture des pages. C&rsquo;est un
+            document qui a premi&egrave;re vue, ressemble beaucoup &agrave; une page HTML, mais qui en
+            r&eacute;alit&eacute;
+            diff&egrave;re par plusieurs aspects :</p>
+        <p>L&rsquo;extension d&rsquo;une telle page est .jsp et non .html</p>
+        <p>Une page JSP contient des balises HTML mais aussi des balises JSP qui appellent de mani&egrave;re
+            transparente du
+            code JAVA.</p>
+        <p>Contrairement &agrave; une page HTML, une page JSP est ex&eacute;cut&eacute;e c&ocirc;t&eacute; serveur et
+            g&eacute;n&egrave;re alors une page renvoy&eacute;e au client.</p>
+        <p>L&rsquo;int&eacute;r&ecirc;t est de rendre possible la cr&eacute;ation des pages dynamiques (comme en PHP).
+            Avec
+            une page JSP, on peut g&eacute;n&eacute;rer n&rsquo;importe quel type de format, HTML, CSS, XML, du texte
+            brut
+            etc. Une page utilisant les Java Server Pages est ex&eacute;cut&eacute;e au moment de la requ&ecirc;te par
+            un
+            moteur de JSP fonctionnant g&eacute;n&eacute;ralement avec un serveur web ou un serveur d&rsquo;application.
+            Lorsqu&rsquo;un utilisateur appelle une page JSP pour la premi&egrave;re fois, le serveur web appelle le
+            moteur
+            JSP qui cr&eacute;e un programme Java &agrave; partir du script JSP, compile la classe afin de fournir un
+            fichier compil&eacute; (extension .class). Au prochain appel, le moteur de JSP v&eacute;rifie si la date du
+            fichier .jsp correspond &agrave; celle du fichier .class, si elle sont identique, le moteur de JSP
+            n&rsquo;effectuera aucune compilation et dans le cas contraire la compilation sera de nouveau faite. En
+            d&rsquo;autres termes le moteur JSP ne transforme et compile la classe que dans le cas o&ugrave; le script
+            &agrave; &eacute;t&eacute; mis &agrave; jour. Ainsi le fait que la compilation ne se fasse que lors de mise
+            &agrave; jour ou de la modification du script JSP fait de cette technologie une des plus rapides pour
+            cr&eacute;er des pages dynamiques. En effet la plupart des technologies de pages actives (PHP par exemple),
+            repose sur l&rsquo;interpr&eacute;tation du code ce qui requiert beaucoup plus de ressource pour produire
+            une
+            r&eacute;ponse http. Etant donn&eacute; que les JSP sont compil&eacute;es puisqu&rsquo;il s&rsquo;agit en
+            fait
+            du bytecode, elles sont beaucoup plus rapides &agrave; l&rsquo;ex&eacute;cution.</p>
+        <h2><strong>Utilisation de Java dans les JSP</strong></h2>
+        <h2><strong>JSTL et EL</strong></h2>
+        <p><a
+                href="https://adiguba.developpez.com/tutoriels/j2ee/jsp/jstl/"><u>https://adiguba.developpez.com/tutoriels/j2ee/jsp/jstl/</u></a>
+        </p>
+        <p>La <strong>JSTL</strong>&nbsp;est une impl&eacute;mentation de Sun qui d&eacute;crit plusieurs
+            actions basiques pour les applications web <strong>J2EE</strong>. Elle propose ainsi un
+            ensemble de librairies de tags pour le d&eacute;veloppement de pages <strong>JSP</strong>.</p>
+        <h2><strong>Portee des requetes HTTP et controle des donnees echanges (cookies, sessions et
+                filtres)</strong></h2>
+        <p><a
+                href="http://www.lsis.org/elmouelhia/courses/java/jee/coursJavaSession.pdf"><u>http://www.lsis.org/elmouelhia/courses/java/jee/coursJavaSession.pdf</u></a>
+        </p>
+        <h3><strong>HttpSession</strong></h3>
+        <p>un moyen de conserver des donn ́ees relatives`a un visiteur surtoutes les pages de notre siteces donn ́ees
+            seront
+            enregistr ́ees sur le serveurpour chaque session, on peut associer une infinit ́e de variables desession (de
+            tout type (primitif, objet, tableau d&rsquo;objets...)ces variables seront d ́etruites, si le visiteur se d
+            ́econnecte, s&rsquo;ild ́epasse une certaine dur ́ee...</p>
+        <h3><strong>Le filtre:</strong></h3>
+        <p>FiltresJEELes filtresUne classeJavaqui impl ́emente qui impl ́emente l&rsquo;interfaceFilterayant les m
+            ́ethodesinit(),destroy(),doFilter()D ́efinie par rapport`a une URL (soit dans le fichierweb.xml, soitavec
+            l&rsquo;annotation@WebFilter()s&rsquo;ex ́ecute avant la Servlet ayant la m&circ;eme URLUn filtre avec
+            l&rsquo;URL/*se lance avant toutes les Servlets del&rsquo;applicationUne fois un filtre est termin ́e, il
+            passe
+            la main`a un autre, avec lam ́ethodechain.doFilter()(s&rsquo;il en existe), sinon c&rsquo;est laServlet qui
+            sera
+            ex ́ecut ́ee.</p>
+        <h3><strong>Le cookie:</strong></h3>
+        <p>CookiesJEELes cookiesun cookie est un fichier que l&rsquo;on enregistre sur l&rsquo;ordinateur duvisiteur
+            pour
+            une longue dur <a href="#"><u>́ee.il</u></a>&nbsp;permet g ́en ́eralement de sauvegarder des donn ́ees sur
+            levisiteur qui nous permet de l&rsquo;identifier lors de sa prochaine visite</p>
+        <h1><strong>Les bases de donn&eacute;es avec Java EE</strong></h1>
+        <h2><strong>Oracle Database et JDBC</strong></h2>
+        <p>Oracle&hellip;.</p>
+        <p>Connecteur&hellip;</p>
+        <p>JDBC&hellip;.</p>
+        <h2><strong>Utilisation de la BD avec SQL et Java Natif</strong></h2>
+        <p>Temps</p>
+        <p>Cas pratique 30 minutes</p>
+        <p><a
+                href="https://mkyong.com/jdbc/connect-to-oracle-db-via-jdbc-driver-java/"><u>https://mkyong.com/jdbc/connect-to-oracle-db-via-jdbc-driver-java/</u></a>
+        </p>
+        <p><a
+                href="https://mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/"><u>https://mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/</u></a>
+        </p>
+        <h2><strong>Design Pattern DAO</strong></h2>
+        <p>Un <strong>objet d'acc&egrave;s aux donn&eacute;es</strong>&nbsp;(en anglais <em>data access
+                object</em>&nbsp;ou <em>DAO</em>) est un <a
+                href="https://fr.wikipedia.org/wiki/Patron_de_conception"><u>patron de
+                    conception</u></a>&nbsp;(c'est-&agrave;-dire un mod&egrave;le pour concevoir une solution)
+            utilis&eacute; dans les <a href="https://fr.wikipedia.org/wiki/Architecture_logicielle"><u>architectures
+                    logicielles</u></a>&nbsp;objet.</p>
+        <h1><strong>Introduction aux Frameworks</strong></h1>
+        <h2><strong>Definition:</strong></h2>
+        <p>En <a href="https://fr.wikipedia.org/wiki/Programmation_informatique"><u>programmation informatique</u></a>,
+            un
+            <strong>framework</strong>&nbsp;(appel&eacute; aussi <strong>infrastructure
+                logicielle</strong><a href="#cite_note-1"><u><sup>1</sup></u></a>, <strong>socle
+                d'applications</strong><a href="#cite_note-2"><u><sup>2</sup></u></a>,
+            <strong>infrastructure de d&eacute;veloppement</strong><a href="#cite_note-3"><u><sup>3</sup></u></a>,
+            ou <strong>cadre d'applications</strong><a href="#cite_note-4"><u><sup>4</sup></u></a>&nbsp;au Canada)
+            d&eacute;signe un ensemble coh&eacute;rent de <a
+                href="https://fr.wikipedia.org/wiki/Composant_logiciel"><u>composants
+                    logiciels</u></a>&nbsp;structurels,
+            qui sert &agrave; cr&eacute;er les fondations ainsi que les grandes lignes de tout ou d&rsquo;une partie
+            d'un <a href="https://fr.wikipedia.org/wiki/Logiciel"><u>logiciel</u></a>&nbsp;(<a
+                href="https://fr.wikipedia.org/wiki/Architecture_informatique"><u>architecture</u></a>). Un
+            <em>framework</em>&nbsp;se distingue d'une simple <a
+                href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle"><u>biblioth&egrave;que
+                    logicielle</u></a>&nbsp;principalement par&nbsp;:</p>
+        <p>son caract&egrave;re g&eacute;n&eacute;rique, faiblement sp&eacute;cialis&eacute;, contrairement &agrave;
+            certaines biblioth&egrave;ques&nbsp;; un <em>framework</em>&nbsp;peut &agrave; ce titre &ecirc;tre
+            constitu&eacute; de plusieurs biblioth&egrave;ques, chacune sp&eacute;cialis&eacute;e dans un domaine. Un
+            <em>framework</em>&nbsp;peut n&eacute;anmoins &ecirc;tre sp&eacute;cialis&eacute;, sur un <a
+                href="https://fr.wikipedia.org/wiki/Langage_informatique"><u>langage</u></a>&nbsp;particulier, une <a
+                href="https://fr.wikipedia.org/wiki/Plate-forme_(informatique)"><u>plateforme</u></a>&nbsp;sp&eacute;cifique,
+            un domaine particulier&nbsp;: <a
+                href="https://fr.wikipedia.org/wiki/Communication_de_donn%C3%A9es"><u>communication de
+                    donn&eacute;es</u></a>, <a href="https://fr.wikipedia.org/wiki/Data_mapping"><u>data
+                    mapping</u></a>,&nbsp;etc.&nbsp;;</p>
+        <p>le cadre de travail qu'il impose de par sa construction m&ecirc;me, guidant l'<a
+                href="https://fr.wikipedia.org/wiki/Architecture_logicielle"><u>architecture
+                    logicielle</u></a>&nbsp;voire
+            conduisant le d&eacute;veloppeur &agrave; respecter certains <a
+                href="https://fr.wikipedia.org/wiki/Patron_de_conception"><u>patrons de conception</u></a>&nbsp;; les
+            biblioth&egrave;ques le constituant sont alors organis&eacute;es selon le m&ecirc;me <a
+                href="https://fr.wikipedia.org/wiki/Paradigme"><u>paradigme</u></a>.</p>
+        <p>Les <em>frameworks</em>&nbsp;sont donc con&ccedil;us et utilis&eacute;s pour modeler l'<a
+                href="https://fr.wikipedia.org/wiki/Architecture"><u>architecture</u></a>&nbsp;des <a
+                href="https://fr.wikipedia.org/wiki/Logiciel_applicatif"><u>logiciels applicatifs</u></a>, des <a
+                href="https://fr.wikipedia.org/wiki/Application_web"><u>applications web</u></a>, des <a
+                href="https://fr.wikipedia.org/wiki/Middleware"><u>middlewares</u></a>&nbsp;et des <a
+                href="https://fr.wikipedia.org/wiki/Composant_logiciel"><u>composants logiciels</u></a>. Les
+            <em>frameworks</em>&nbsp;sont acquis par les informaticiens, puis incorpor&eacute;s dans des logiciels
+            applicatifs mis sur le march&eacute;, ils sont par cons&eacute;quent rarement achet&eacute;s et
+            install&eacute;s
+            s&eacute;par&eacute;ment par un utilisateur final.</p>
+        <h2><strong>presentation des plus populaires (Hibernate, Spring, Struts&hellip;)</strong></h2>
+        <p>Struts:</p>
+        <p><strong>Apache Struts</strong>&nbsp;est un <a
+                href="https://fr.wikipedia.org/wiki/Framework"><u>framework</u></a>&nbsp;<a
+                href="https://fr.wikipedia.org/wiki/Logiciel_libre"><u>libre</u></a>&nbsp;servant au
+            d&eacute;veloppement
+            d'<a href="https://fr.wikipedia.org/wiki/Application_web"><u>applications web</u></a>&nbsp;<a
+                href="https://fr.wikipedia.org/wiki/Java_EE"><u>Java EE</u></a>. Il utilise et &eacute;tend l'<a
+                href="https://fr.wikipedia.org/wiki/Interface_de_programmation"><u>API</u></a>&nbsp;<a
+                href="https://fr.wikipedia.org/wiki/Servlet"><u>Servlet Java</u></a>&nbsp;afin d'encourager les
+            d&eacute;veloppeurs &agrave; adopter l'architecture <a
+                href="https://fr.wikipedia.org/wiki/Mod%C3%A8le-Vue-Contr%C3%B4leur"><u>Mod&egrave;le-Vue-Contr&ocirc;leur</u></a>&nbsp;(MVC).
+        </p>
+        <p><a
+                href="https://www.jmdoudoux.fr/java/dej/chap-struts.htm"><u>https://www.jmdoudoux.fr/java/dej/chap-struts.htm</u></a>
+        </p>
+        <p>Spring:</p>
+        <p>Spring est consid&eacute;r&eacute; comme un conteneur dit &laquo;&nbsp;l&eacute;ger&nbsp;&raquo;. La raison
+            de ce
+            nommage est expliqu&eacute;e par Erik Gollot dans l&rsquo;introduction du document <em>Introduction au
+                framework Spring</em><a href="#cite_note-7"><u><sup>7</sup></u></a>.</p>
+        <p>&laquo;&nbsp;Spring est effectivement un conteneur dit &laquo;&nbsp;l&eacute;ger&nbsp;&raquo;,
+            c&rsquo;est-&agrave;-dire une infrastructure similaire &agrave; un <a
+                href="https://fr.wikipedia.org/wiki/Serveur_d'applications"><u>serveur d'applications</u></a>&nbsp;<a
+                href="https://fr.wikipedia.org/wiki/Java_EE"><u>J2EE</u></a>. Il prend donc en charge la cr&eacute;ation
+            d&rsquo;objets et la mise en relation d&rsquo;objets par l&rsquo;interm&eacute;diaire d&rsquo;un fichier de
+            configuration qui d&eacute;crit les objets &agrave; fabriquer et les relations de d&eacute;pendances entre
+            ces
+            objets. Le gros avantage par rapport aux serveurs d&rsquo;application est qu&rsquo;avec Spring, les classes
+            n&rsquo;ont pas besoin d&rsquo;impl&eacute;menter une quelconque interface pour &ecirc;tre prises en charge
+            par
+            le framework (au contraire des <a href="https://fr.wikipedia.org/wiki/Serveur_d'applications"><u>serveurs
+                    d'applications</u></a>&nbsp;<a href="https://fr.wikipedia.org/wiki/Java_EE"><u>J2EE</u></a>&nbsp;et
+            des
+            <a href="https://fr.wikipedia.org/wiki/Enterprise_JavaBeans"><u>EJBs</u></a>). C&rsquo;est en ce sens que
+            Spring
+            est qualifi&eacute; de conteneur &laquo;&nbsp;l&eacute;ger&nbsp;&raquo;.&nbsp;&raquo;</p>
+        <p>Spring s&rsquo;appuie principalement sur l&rsquo;int&eacute;gration de trois concepts cl&eacute;s&nbsp;:</p>
+        <p>L&rsquo;<a href="https://fr.wikipedia.org/wiki/Inversion_de_contr%C3%B4le"><u>inversion de
+                    contr&ocirc;le</u></a>&nbsp;est assur&eacute;e de deux fa&ccedil;ons diff&eacute;rentes&nbsp;: la
+            recherche de d&eacute;pendances et l'<a
+                href="https://fr.wikipedia.org/wiki/Injection_de_d%C3%A9pendances"><u>injection de
+                    d&eacute;pendances</u></a>&nbsp;;</p>
+        <p>La <a href="https://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_aspect"><u>programmation
+                    orient&eacute;e
+                    aspect</u></a>&nbsp;;</p>
+        <p>Une couche d&rsquo;abstraction.</p>
+        <p>La couche d&rsquo;abstraction permet d&rsquo;int&eacute;grer d&rsquo;autres <a
+                href="https://fr.wikipedia.org/wiki/Framework"><u>frameworks</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle"><u>biblioth&egrave;ques</u></a>&nbsp;avec
+            une plus grande facilit&eacute;. Cela se fait par l&rsquo;apport ou non de couches d&rsquo;abstraction
+            sp&eacute;cifiques &agrave; des frameworks particuliers. Il est ainsi possible d&rsquo;int&eacute;grer un
+            module
+            d&rsquo;envoi de mails plus facilement.</p>
+        <p>L&rsquo;<a href="https://fr.wikipedia.org/wiki/Inversion_de_contr%C3%B4le"><u>inversion de
+                    contr&ocirc;le</u></a>&nbsp;:</p>
+        <p>La recherche de d&eacute;pendance&nbsp;: consiste pour un objet &agrave; interroger le conteneur, afin de
+            trouver
+            ses d&eacute;pendances avec les autres objets. C&rsquo;est un cas de fonctionnement similaire aux
+            EJBs&nbsp;;
+        </p>
+        <p>L&rsquo;<a href="https://fr.wikipedia.org/wiki/Injection_de_d%C3%A9pendances"><u>injection de
+                    d&eacute;pendances</u></a>&nbsp;: cette injection peut &ecirc;tre effectu&eacute;e de trois
+            mani&egrave;res possibles&nbsp;:</p>
+        <p>l&rsquo;injection de d&eacute;pendance via le constructeur,</p>
+        <p>l&rsquo;injection de d&eacute;pendance via les modificateurs (setters),</p>
+        <p>l&rsquo;injection de d&eacute;pendance via une interface.</p>
+        <p>Les deux premi&egrave;res sont les plus utilis&eacute;es par Spring.</p>
+        <p>Ce framework, gr&acirc;ce &agrave; sa couche d&rsquo;abstraction, ne concurrence pas d&rsquo;autres
+            frameworks
+            dans une couche sp&eacute;cifique d&rsquo;un mod&egrave;le architectural <a
+                href="https://fr.wikipedia.org/wiki/Mod%C3%A8le-Vue-Contr%C3%B4leur"><u>Mod&egrave;le-Vue-Contr&ocirc;leur</u></a>&nbsp;mais
+            s&rsquo;av&egrave;re &ecirc;tre un framework multi-couches pouvant s&rsquo;ins&eacute;rer au niveau de
+            toutes
+            les couches&nbsp;; mod&egrave;le, vue et contr&ocirc;leur. Ainsi il permet d&rsquo;int&eacute;grer <a
+                href="https://fr.wikipedia.org/wiki/Hibernate"><u>Hibernate</u></a>&nbsp;ou <a
+                href="https://fr.wikipedia.org/wiki/IBATIS"><u>iBATIS</u></a>&nbsp;pour la couche de persistance ou
+            encore
+            <a href="https://fr.wikipedia.org/wiki/Apache_Struts"><u>Struts</u></a>&nbsp;et <a
+                href="https://fr.wikipedia.org/wiki/JavaServer_Faces"><u>JavaServer Faces</u></a>&nbsp;pour la couche
+            pr&eacute;sentation.</p>
+        <p><a href="https://spring.io/"><u>https://spring.io/</u></a></p>
+        <h1><strong>Hibernate</strong></h1>
+        <h2><strong>Mapping correspondance objet-relationnel</strong></h2>
+        <h2><strong>Requ&ecirc;tes HQL</strong></h2>
+    </div>
+    <% include ../../../partials/footer.ejs %>
+</body>
