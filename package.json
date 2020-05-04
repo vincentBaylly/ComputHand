@@ -8,14 +8,26 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve",
+    "inspect": "vue-cli-service inspect"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap-vue": "2.13.0",
+    "css-loader": "3.5.3",
     "ejs": "2.5.6",
-    "express": "^4.17.1",
-    "vue": "2.5.16"
+    "express": "4.17.1",
+    "jquery": "3.5.0",
+    "vue": "^2.6.11",
+    "vue-router": "3.1.6",
+    "webpack": "4.43.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@vue/cli-service": "^4.3.1",
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/heroku/node-js-getting-started"
