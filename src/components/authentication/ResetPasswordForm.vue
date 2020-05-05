@@ -10,12 +10,12 @@
                     <label for="password">Confirm password</label>
                     <input type="password" class="form-control" id="password">
                 </div>
-                <button type="submit" class="btn btn-primary" style="width:100%">Reset</button>
+                <b-button type="submit" variant="dark" style="width:100%">Reset</b-button>
         </form>
     </div>
 </template>
 <script>
 export default {
-    
+
 }
 </script>

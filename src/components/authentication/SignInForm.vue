@@ -51,14 +51,14 @@
         />
       </div>
       <div class="mt-30">
-        <button
+        <b-button
           type="submit"
-          class="btn btn-primary"
+          variant="dark"
           style="width:100%"
           v-on:click="postRegistration"
         >
           Sign in
-        </button>
+        </b-button>
       </div>
       <div class="mt-15">
         <small>

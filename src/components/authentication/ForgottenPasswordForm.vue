@@ -8,15 +8,15 @@
             <div class="form-group mt-30">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email">
-            </div>  
+            </div>
             <div class="mt-30">
-                <button type="submit" class="btn btn-primary" style="width:100%">Send</button>
+                <b-button type="submit" variant="dark" style="width:100%">Send</b-button>
             </div>
         </form>
     </div>
 </template>
 <script>
 export default {
-    
+
 }
 </script>
