@@ -2,7 +2,6 @@
 <div>
   <div class="jumbotron text-center">
     <div class="container" style="background-image: url(/images/home.jpg)">
-      <!-- <img src="/images/home.jpg" style="width:100%;height:100%"> -->
     </div>
   </div>
   <div class="container content">

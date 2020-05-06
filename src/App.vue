@@ -1,16 +1,19 @@
 <template>
 <div>
+  <Header title="ComputHand"></Header>
   <navigation></navigation>
   <router-view></router-view>
   <Footer></Footer>
 </div>
 </template>
 <script>
+import Header from './components/global/Header.vue';
 import Navigation from './components/global/Nav.vue';
 import Footer from './components/global/Footer.vue';
 
 export default {
   components: {
+    Header,
     Navigation,
     Footer
   }
