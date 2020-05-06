@@ -34,12 +34,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: bold;
+  font-weight: bold!important;
 }
 
 .jumbotron {
   background-image: url(/images/home.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .small-link:hover {
@@ -49,6 +50,16 @@ h4 {
 
 .small-link {
   color: rgb(33, 37, 41);
+}
+
+.container a:link, .container a:visited, .container a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #000000;
+  text-decoration: none;
 }
 
 .full-height-column {

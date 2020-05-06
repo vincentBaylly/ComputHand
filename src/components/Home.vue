@@ -1,8 +1,6 @@
 <template>
 <div>
   <div class="jumbotron text-center">
-    <div class="container" style="background-image: url(/images/home.jpg)">
-    </div>
   </div>
   <div class="container content">
     <div class="row">
