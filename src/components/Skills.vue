@@ -2,7 +2,7 @@
 <div>
   <div class="jumbotron text-center">
     <div class="container">
-      <b-button variant="dark" href="https://drive.google.com/file/d/1lnAsl-jiyKd9qbOaixtzKV7pD2197kB3/view?usp=sharing" target="_blank"><b-icon-download></b-icon-download> Mon CV, ici</b-button>
+      <b-button variant="dark" href="https://drive.google.com/open?id=16OnNi8DwXBdCHFeoUdaciIcROr3iL0GS" target="_blank"><b-icon-download></b-icon-download> Mon CV, ici</b-button>
     </div>
   </div>
   <div class="container content">
