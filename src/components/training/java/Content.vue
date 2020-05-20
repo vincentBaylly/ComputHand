@@ -2,7 +2,7 @@
   <div class="container content" id="content"></div>
 </template>
 <script>
-import json from "JavaContent.json";
+import json from "../content/JavaContent.json";
 
 export default {
   mounted() {

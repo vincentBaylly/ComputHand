@@ -2,7 +2,7 @@
   <div class="container content" id="content"></div>
 </template>
 <script>
-import json from "J2EEContent.json";
+import json from "../content/J2EEContent.json";
 
 export default {
   mounted() {

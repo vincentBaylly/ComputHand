@@ -2,7 +2,7 @@
   <div class="container content" id="content"></div>
 </template>
 <script>
-import json from "VueContent.json";
+import json from "../content/VueContent.json";
 
 export default {
   mounted() {
