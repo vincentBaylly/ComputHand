@@ -2,7 +2,7 @@
   <div class="container content" id="content"></div>
 </template>
 <script>
-import json from "installSQLiteContent.json";
+import json from "../content/installSQLiteContent.json";
 
 export default {
   mounted() {
