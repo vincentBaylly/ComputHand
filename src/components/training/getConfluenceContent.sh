@@ -1,4 +1,4 @@
-AUTH=vincent.baylly@computhand.com:ldUbIVUMWpptbGUIe5bW4B55
+AUTH=
 
 # Page SQLite Installation
 curl -bD \
