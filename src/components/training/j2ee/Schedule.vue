@@ -1,0 +1,440 @@
+<template>
+  <div class="container content">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <p><strong>Contenu</strong></p>
+          </td>
+          <td>
+            <p><strong>Dur&eacute;e</strong></p>
+          </td>
+          <td>
+            <p><strong>Journ&eacute;e</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>pr&eacute;sentation de la formation 15 20 minutes</p>
+          </td>
+          <td rowspan="20">
+            <p><strong>Journ&eacute;e 1</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Introduction au Java EE(J2EE)</strong></p>
+          </td>
+          <td rowspan="5">
+            <p>Th&eacute;orie 70 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Historique</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Java SE</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Java EE</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Outils et environnement de d&eacute;veloppement</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause Matin 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Mise en place des outils</p>
+          </td>
+          <td>
+            <p>Cas Pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Design pattern MVC</p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause diner 60 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Notion de requetes, protocle et Fonctionnement</p>
+          </td>
+          <td rowspan="3">
+            <p>Th&eacute;orie 90 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Notion de J2EE</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Concepts de base</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Cas Pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Pause apr&egrave;s-midi 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Transmission de donn&eacute;es entre pages</p>
+          </td>
+          <td rowspan="2">
+            <p>Th&eacute;orie 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Servlet</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>15-20 minutes r&eacute;ponses aux questions de la veille</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>API JEE</strong></p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 70 minutes</p>
+          </td>
+          <td rowspan="12">
+            <p><strong>Journ&eacute;e 2</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause matin 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>D&eacute;velopper une application Web</strong></p>
+          </td>
+          <td rowspan="3">
+            <p>Th&eacute;ories 75 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Pr&eacute;sentation des JSP</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Utilisation de Java dans les JSP</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause diner 60 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>JSTL et EL</p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 90 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas Pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause apr&egrave;s-midi 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>
+              Portee des requetes HTTP et controle des donn&eacute;es
+              &eacute;changes (cookies, sessions et filtres)
+            </p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>15-20 minutes r&eacute;ponses aux questions de la veille</p>
+          </td>
+          <td rowspan="13">
+            <p><strong>Journee 3</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Les bases de donn&eacute;es avec Java EE</strong></p>
+          </td>
+          <td rowspan="2">
+            <p>Th&eacute;orie 70 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Oracle Database et JDBC</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause matin 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Utilisation de la BD avec SQL et Java Natif</p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause diner 60 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>Design Pattern DAO</p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 90 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas Pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause apr&egrave;s-midi 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>Design Pattern DAO</p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>15-20 minutes r&eacute;ponses aux questions de la veille</p>
+          </td>
+          <td rowspan="14">
+            <p><strong>Journ&eacute;e 4</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Introduction aux Frameworks</strong></p>
+          </td>
+          <td rowspan="2">
+            <p>Th&eacute;orie 70 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              pr&eacute;sentation des plus populaires (Hibernate, Spring,
+              Struts&hellip;)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause Matin 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Spring</p>
+          </td>
+          <td>
+            <p>Cas Pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><strong>Hibernate</strong></p>
+          </td>
+          <td rowspan="2">
+            <p>Th&eacute;orie 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Mapping correspondance objet-relationnel</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause diner 60 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <p>Requ&ecirc;tes HQL</p>
+          </td>
+          <td>
+            <p>Th&eacute;orie 90 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Cas Pratique 30 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Pause apres-midi 15 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Requ&ecirc;tes HQL</p>
+          </td>
+          <td>
+            <p>Cas Pratique 45 minutes</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>&nbsp;</p>
+          </td>
+          <td>
+            <p>Conclusion 30 minutes</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

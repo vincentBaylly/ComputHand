@@ -9,13 +9,16 @@ import LogIn from "./components/LogIn.vue";
 import SignIn from "./components/SignIn.vue";
 import ResetPassword from "./components/ResetPassword.vue";
 import ForgottenPassword from "./components/ForgottenPassword.vue";
+import SQLite from "./components/training/info/SQLite.vue";
+import J2EEContent from "./components/training/j2ee/Content.vue";
+import JavaContent from "./components/training/java/Content.vue";
+import VueContent from "./components/training/vuejs/Content.vue";
 
 Vue.use(Router);
 
 export default new Router({
   mode: "history",
-  routes: [
-    {
+  routes: [{
       path: "/",
       name: "home",
       component: Home
@@ -59,6 +62,26 @@ export default new Router({
       path: "/forgottenpassword",
       name: "forgottenpassword",
       component: ForgottenPassword
+    },
+    {
+      path: "/training/info/installSQLite",
+      name: "SQLite",
+      component: SQLite
+    },
+    {
+      path: "/training/j2eecontent",
+      name: "j2eecontent",
+      component: J2EEContent
+    },
+    {
+      path: "/training/javacontent",
+      name: "javacontent",
+      component: JavaContent
+    },
+    {
+      path: "/training/vuecontent",
+      name: "vuecontent",
+      component: VueContent
     }
   ]
 });
