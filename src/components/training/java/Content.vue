@@ -12,7 +12,7 @@ export default {
     setContent: function() {
       var div = document.getElementById("content");
 
-      div.innerHTML += json.results[0].body.view.value;
+      div.innerHTML = json.results[0].body.view.value;
     },
   },
 };
