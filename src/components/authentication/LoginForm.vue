@@ -31,7 +31,7 @@
           type="submit"
           variant="dark"
           style="width:100%"
-          v-on:click="postLogin"
+          @click="postLogin"
         >
           Log in
         </b-button>
@@ -59,35 +59,49 @@ export default {
     return {
       formLogin: {
         email: "",
-        password: ""
+        password: "",
       },
-      errors: []
-    }
+      errors: [],
+    };
   },
   methods: {
     postLogin: function(event) {
-      var loginURL = `${config.APIPath}/api/public/member/login`;
+      var loginURL = `${config.APIPath}/api/public/user/login`;
       axios
         .post(loginURL, {
           email: this.formLogin.email,
-          password: this.formLogin.password
+          password: this.formLogin.password,
         })
         .then(
-          result => {
-            this.user = result.data.origin;
-            //TODO redirect to user logged screen
-            console.log(user);
+          (response) => {
+            // let is_admin = response.data.origin.is_admin;
+            localStorage.setItem("user", JSON.stringify(response.data.user));
+            localStorage.setItem("jwt", response.data.token);
+
+            if (localStorage.getItem("jwt") != null) {
+              this.$emit("loggedIn");
+
+              if (this.$route.params.nextUrl != null) {
+                this.$router.push(this.$route.params.nextUrl);
+              } else {
+                // if (is_admin == 1) {
+                //   this.$router.push("admin");
+                // } else {
+                this.$router.push("training/dashboard");
+                // }
+              }
+            }
           },
-          error => {
+          (error) => {
             this.errors.push(error);
           }
         )
-        .catch(e => {
+        .catch((e) => {
           this.errors.push(e);
         });
-    }
-  }
-}
+    },
+  },
+};
 </script>
 <style scoped>
 .login-container {
