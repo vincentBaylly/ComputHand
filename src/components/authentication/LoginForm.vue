@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <form>
+    <form action="javascript:void(0)">
       <h2 class="text-center">Log in</h2>
       <div class="form-group mt-30">
         <label for="email">Email</label>
@@ -77,6 +77,7 @@ export default {
             // let is_admin = response.data.origin.is_admin;
             localStorage.setItem("user", JSON.stringify(response.data.user));
             localStorage.setItem("jwt", response.data.token);
+            localStorage.setItem("expiration", response.data.tokenExpiration);
 
             if (localStorage.getItem("jwt") != null) {
               this.$emit("loggedIn");

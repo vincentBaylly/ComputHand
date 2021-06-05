@@ -85,33 +85,25 @@
 }
 </style>
 <script>
+import { checkIfIsLogged, unvalidateToken } from "../helper/auth";
+
 export default {
   template: "<Navigation/>",
   name: "navigation",
   data() {
     return {
-      isLogged: this.checkIfIsLogged(),
+      isLogged: checkIfIsLogged(),
     };
   },
   created() {
     this.$on("loggedIn", () => {
-      this.isLogged = this.checkIfIsLogged();
+      this.isLogged = checkIfIsLogged();
     });
   },
   methods: {
     signOut() {
-      localStorage.removeItem("jwt");
-      localStorage.removeItem("user");
-      this.isLogged = this.checkIfIsLogged();
+      this.isLogged = unvalidateToken();
       this.$router.push("/");
-    },
-    checkIfIsLogged() {
-      let token = localStorage.getItem("jwt");
-      if (token) {
-        return true;
-      } else {
-        return false;
-      }
     },
   },
 };
