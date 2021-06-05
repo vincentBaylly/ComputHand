@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./components/Home.vue";
 import License from "./components/License.vue";
+import Trainings from "./components/Trainings.vue";
 import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue";
@@ -29,6 +30,11 @@ let router = new Router({
       path: "/license",
       name: "license",
       component: License,
+    },
+    {
+      path: "/trainings",
+      name: "trainings",
+      component: Trainings,
     },
     {
       path: "/skills",
