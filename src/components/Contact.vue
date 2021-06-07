@@ -6,22 +6,41 @@
       <form class="contact-form">
         <!-- name -->
         <div class="field">
-            <input type="text" name="name" class="contact-input" placeholder="Your Name" required minlength="3">
+          <input
+            type="text"
+            name="name"
+            class="contact-input"
+            placeholder="Your Name"
+            required
+            minlength="3"
+          />
         </div>
-        <br/>
+        <br />
         <!-- email -->
         <div class="field">
-          <input type="email" name="email" class="contact-input" placeholder="Your Email" required email>
+          <input
+            type="email"
+            name="email"
+            class="contact-input"
+            placeholder="Your Email"
+            required
+            email
+          />
         </div>
-        <br/>
+        <br />
         <!-- message -->
         <div class="field">
-          <textarea class="contact-textarea" name="message" placeholder="What's on your mind?" required></textarea>
+          <textarea
+            class="contact-textarea"
+            name="message"
+            placeholder="What's on your mind?"
+            required
+          ></textarea>
         </div>
-        <br/>
+        <br />
         <b-button type="submit" variant="dark">Submit</b-button>
       </form>
-      <br/>
+      <br />
     </div>
   </div>
 </template>

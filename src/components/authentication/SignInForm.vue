@@ -85,9 +85,9 @@ export default {
         username: "",
         emailAddress: "",
         password: "",
-        confirmPassword: ""
+        confirmPassword: "",
       },
-      errors: []
+      errors: [],
     };
   },
   methods: {
@@ -99,29 +99,40 @@ export default {
             name: this.formRegister.name,
             username: this.formRegister.username,
             password: this.formRegister.password,
-            emailAddress: this.formRegister.emailAddress
+            emailAddress: this.formRegister.emailAddress,
           })
           .then(
-            result => {
-              this.user = result.data.origin;
-              //TODO redirect to user registred screen
-              console.log(user);
+            (response) => {
+              localStorage.setItem(
+                "user",
+                JSON.stringify(response.origin.user)
+              );
+              localStorage.setItem("jwt", response.origin.token);
+
+              if (localStorage.getItem("jwt") != null) {
+                this.$emit("loggedIn");
+                if (this.$route.params.nextUrl != null) {
+                  this.$router.push(this.$route.params.nextUrl);
+                } else {
+                  this.$router.push("/");
+                }
+              }
             },
-            error => {
+            (error) => {
               this.errors.push(error);
             }
           )
-          .catch(e => {
+          .catch((e) => {
             this.errors.push(e);
           });
       } else {
         //TODO manage multilanguage
         var error = {
-          message: "The password and the password confirmation doesn't match!"
+          message: "The password and the password confirmation doesn't match!",
         };
         this.errors.push(error);
       }
-    }
-  }
+    },
+  },
 };
 </script>
