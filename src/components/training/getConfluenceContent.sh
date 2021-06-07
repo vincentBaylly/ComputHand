@@ -1,4 +1,10 @@
 AUTH=vincent.baylly@computhand.com:ldUbIVUMWpptbGUIe5bW4B55
+
+> src/components/training/content/installSQLiteContent.json
+> src/components/training/content/VueContent.json
+> src/components/training/content/JavaContent.json
+> src/components/training/content/J2EEContent.json
+
 # Page SQLite Installation
 curl -bD \
    -u $AUTH \
@@ -25,4 +31,4 @@ curl -bD \
    -u $AUTH \
    -X GET \
    -H "Content-Type: application/json" \
-   "https://computhand.atlassian.net/wiki/rest/api/content?spacekey=FD&title=Java+pour+le+Web+JEE+J2EE+Programmation+Web+en+Java+Hibernate&expand=body.view" >> src/components/training/content/J2EEContent.json
+   "https://computhand.atlassian.net/wiki/rest/api/content/229378?expand=body.view" >> src/components/training/content/J2EEContent.json

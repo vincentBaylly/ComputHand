@@ -19,7 +19,7 @@
             <b-icon-person-lines-fill></b-icon-person-lines-fill> Auteur
           </b-nav-item>
           <b-nav-item href="/trainings">
-            <b-icon-screwdriver></b-icon-screwdriver> Formation offerte
+            <b-icon-book></b-icon-book> Formation offerte
           </b-nav-item>
           <b-nav-item href="/skills">
             <b-icon-screwdriver></b-icon-screwdriver> Competence

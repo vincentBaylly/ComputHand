@@ -6,8 +6,8 @@
         <h1>Bienvenue dans votre Tableau de bord</h1>
         <!-- @click="getListGroup()" -->
         <b-list-group>
-          <b-list-group-item href="/training/sqllite"
-            >SQLLite</b-list-group-item
+          <b-list-group-item href="/training/info/installSQLite"
+            >install SQLLite</b-list-group-item
           >
           <b-list-group-item href="/training/j2eecontent"
             >J2EE</b-list-group-item
