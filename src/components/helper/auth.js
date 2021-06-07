@@ -18,6 +18,7 @@ export default {
     unvalidateToken: function() {
       localStorage.removeItem("jwt");
       localStorage.removeItem("user");
+      localStorage.removeItem("expiration");
       return false;
     },
   },
