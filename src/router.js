@@ -22,7 +22,7 @@ let router = new Router({
   mode: "history",
   routes: [
     {
-      path: "/",
+      path: "/home",
       name: "home",
       component: Home,
     },
@@ -113,13 +113,22 @@ let router = new Router({
     },
 
     // otherwise redirect to home
-    { path: "*", redirect: "/" },
+    { path: "*", redirect: "/home" },
   ],
 });
 
 router.beforeEach((to, from, next) => {
   // redirect to login page if not logged in and trying to access a restricted page
-  const publicPages = ["/login", "/register"];
+  const publicPages = [
+    "/home",
+    "/login",
+    "/signin",
+    "/license",
+    "/trainings",
+    "/skills",
+    "/projects",
+    "/contact",
+  ];
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = localStorage.getItem("user");
 
